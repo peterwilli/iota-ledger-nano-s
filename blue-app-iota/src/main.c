@@ -505,21 +505,7 @@ static bool derive() {
     }
 
     os_perso_derive_node_bip32(CX_CURVE_256K1, path, 5, privateKeyData, NULL);
-
-    cx_ecdsa_init_private_key(CX_CURVE_256K1, privateKeyData, 32, &privateKey);
-    cx_ecfp_generate_pair(CX_CURVE_256K1, &publicKey, &privateKey, 1);
-    publicKey.W[0] = ((publicKey.W[64] & 1) ? 0x03 : 0x02);
-    cx_sha256_init(&u.shasha);
-    cx_hash(&u.shasha.header, CX_LAST, publicKey.W, 33, privateKeyData);
-    cx_ripemd160_init(&u.riprip);
-    cx_hash(&u.riprip.header, CX_LAST, privateKeyData, 32, tmp + 1);
-    tmp[0] = 0;
-    cx_sha256_init(&u.shasha);
-    cx_hash(&u.shasha.header, CX_LAST, tmp, 21, privateKeyData);
-    cx_sha256_init(&u.shasha);
-    cx_hash(&u.shasha.header, CX_LAST, privateKeyData, 32, privateKeyData);
-    os_memmove(tmp + 21, privateKeyData, 4);
-    length = encode_base58(tmp, sizeof(tmp), address, sizeof(address));
+    length = encode_base58(privateKeyData, sizeof(privateKeyData), address, sizeof(address));
     address[length] = '\0';
     return true;
 }
