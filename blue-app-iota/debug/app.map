@@ -1,0 +1,2233 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+                              obj/os_io_seproxyhal.o (__aeabi_uidiv)
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+                              /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+                              obj/os.o (__aeabi_memclr)
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+                              obj/os.o (__aeabi_memset)
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+                              /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o) (memset)
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+                              obj/main.o (setjmp)
+/home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+                              obj/os_io_seproxyhal.o (strlen)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 obj/main.o
+ .text          0x00000000        0x0 obj/os.o
+ .text.os_memcmp
+                0x00000000       0x30 obj/os.o
+ .ARM.exidx.text.os_memcmp
+                0x00000000        0x8 obj/os.o
+ .text.os_xor   0x00000000       0x3e obj/os.o
+ .ARM.exidx.text.os_xor
+                0x00000000        0x8 obj/os.o
+ .text.os_longjmp
+                0x00000000        0xa obj/os.o
+ .ARM.exidx.text.os_longjmp
+                0x00000000        0x8 obj/os.o
+ .text          0x00000000        0x0 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_request_mcu_status
+                0x00000000       0x1c obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_request_mcu_status
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_handle_bluenrg_event
+                0x00000000        0x2 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_handle_bluenrg_event
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_init_button
+                0x00000000       0x14 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_init_button
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_touch
+                0x00000000       0x18 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_touch
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_display_bitmap
+                0x00000000       0x46 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_display_bitmap
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_power_off
+                0x00000000       0x1c obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_power_off
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_se_reset
+                0x00000000       0x1c obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_se_reset
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_disable_io
+                0x00000000       0x3c obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_disable_io
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.io_seproxyhal_backlight
+                0x00000000       0x34 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.io_seproxyhal_backlight
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.screen_printc
+                0x00000000       0x2c obj/os_io_seproxyhal.o
+ .ARM.exidx.text.screen_printc
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_menu_get_entry
+                0x00000000       0x20 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_menu_get_entry
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_menu_element_preprocessor
+                0x00000000      0x184 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_menu_element_preprocessor
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_menu_elements_button
+                0x00000000      0x128 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_menu_elements_button
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_menu_display
+                0x00000000      0x114 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_menu_display
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_turner_element_preprocessor
+                0x00000000       0xb4 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_turner_element_preprocessor
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_turner_elements_button
+                0x00000000       0x10 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_turner_elements_button
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_turner_ticker
+                0x00000000       0xd4 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_turner_ticker
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .text.ux_turner_display
+                0x00000000       0xd0 obj/os_io_seproxyhal.o
+ .ARM.exidx.text.ux_turner_display
+                0x00000000        0x8 obj/os_io_seproxyhal.o
+ .rodata.ux_menu_elements
+                0x00000000      0x1f8 obj/os_io_seproxyhal.o
+ .bss.ux_menu   0x00000000       0x4c obj/os_io_seproxyhal.o
+ .rodata.UX_MENU_END_ENTRY
+                0x00000000       0x1c obj/os_io_seproxyhal.o
+ .rodata.ux_turner_elements
+                0x00000000      0x188 obj/os_io_seproxyhal.o
+ .bss.ux_turner
+                0x00000000       0x4c obj/os_io_seproxyhal.o
+ .text          0x00000000        0x0 obj/os_printf.o
+ .text.snprintf
+                0x00000000      0x4a0 obj/os_printf.o
+ .ARM.exidx.text.snprintf
+                0x00000000        0x8 obj/os_printf.o
+ .debug_str     0x00000000      0x1c4 obj/os_printf.o
+ .debug_loc     0x00000000      0x4c7 obj/os_printf.o
+ .debug_abbrev  0x00000000      0x100 obj/os_printf.o
+ .debug_info    0x00000000      0x20a obj/os_printf.o
+ .debug_ranges  0x00000000        0x0 obj/os_printf.o
+ .debug_macinfo
+                0x00000000        0x1 obj/os_printf.o
+ .debug_pubnames
+                0x00000000       0x3b obj/os_printf.o
+ .debug_pubtypes
+                0x00000000       0x8e obj/os_printf.o
+ .comment       0x00000000       0x2e obj/os_printf.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/os_printf.o
+ .ARM.attributes
+                0x00000000       0x41 obj/os_printf.o
+ .debug_frame   0x00000000       0x34 obj/os_printf.o
+ .debug_line    0x00000000      0x415 obj/os_printf.o
+ .text          0x00000000        0x0 obj/pic.o
+ .text          0x00000000        0x0 obj/pic_internal.o
+ .text          0x00000000        0x0 obj/syscalls.o
+ .text.nvm_write
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.nvm_write
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rng_u8
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_rng_u8
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_sha224_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_sha224_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_sha384_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_sha384_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_sha512_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_sha512_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_sha3_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_sha3_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_keccak_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_keccak_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_sha3_xof_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_sha3_xof_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hash_sha256
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_hash_sha256
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hash_sha512
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_hash_sha512
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hmac_ripemd160_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_hmac_ripemd160_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hmac_sha256_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_hmac_sha256_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hmac_sha512_init
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_hmac_sha512_init
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hmac  0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_hmac
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hmac_sha512
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_hmac_sha512
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_hmac_sha256
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_hmac_sha256
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_pbkdf2_sha512
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_pbkdf2_sha512
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_des_init_key
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_des_init_key
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_des_iv
+                0x00000000       0x44 obj/syscalls.o
+ .ARM.exidx.text.cx_des_iv
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_des   0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_des
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_aes_init_key
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_aes_init_key
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_aes_iv
+                0x00000000       0x44 obj/syscalls.o
+ .ARM.exidx.text.cx_aes_iv
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_aes   0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_aes
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_init_public_key
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_init_public_key
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_init_private_key
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_init_private_key
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_generate_pair
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_generate_pair
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_sign
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_sign
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_verify
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_verify
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_encrypt
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_encrypt
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_rsa_decrypt
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_rsa_decrypt
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecfp_is_valid_point
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_ecfp_is_valid_point
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecfp_add_point
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_ecfp_add_point
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecfp_scalar_mult
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_ecfp_scalar_mult
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecfp_init_public_key
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_ecfp_init_public_key
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_borromean_sign
+                0x00000000       0x54 obj/syscalls.o
+ .ARM.exidx.text.cx_borromean_sign
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_borromean_verify
+                0x00000000       0x50 obj/syscalls.o
+ .ARM.exidx.text.cx_borromean_verify
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecschnorr_sign
+                0x00000000       0x44 obj/syscalls.o
+ .ARM.exidx.text.cx_ecschnorr_sign
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecschnorr_verify
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_ecschnorr_verify
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_edward_compress_point
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_edward_compress_point
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_edward_decompress_point
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_edward_decompress_point
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_eddsa_sign
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_eddsa_sign
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_eddsa_verify
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_eddsa_verify
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecdsa_sign
+                0x00000000       0x44 obj/syscalls.o
+ .ARM.exidx.text.cx_ecdsa_sign
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecdsa_verify
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.cx_ecdsa_verify
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_ecdh  0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_ecdh
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_crc16
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_crc16
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_crc16_update
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_crc16_update
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_cmp
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_cmp
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_is_zero
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_is_zero
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_add
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_add
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_sub
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_sub
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_mult
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_mult
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_addm
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_math_addm
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_subm
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_math_subm
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_multm
+                0x00000000       0x40 obj/syscalls.o
+ .ARM.exidx.text.cx_math_multm
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_powm
+                0x00000000       0x44 obj/syscalls.o
+ .ARM.exidx.text.cx_math_powm
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_modm
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_modm
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_invprimem
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_invprimem
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_invintm
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_invintm
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_is_prime
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_is_prime
+                0x00000000        0x8 obj/syscalls.o
+ .text.cx_math_next_prime
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.cx_math_next_prime
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_wipe
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_perso_wipe
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_erase_all
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_perso_erase_all
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_set_pin
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_perso_set_pin
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_set_current_identity_pin
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_perso_set_current_identity_pin
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_set_seed
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_perso_set_seed
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_derive_and_set_seed
+                0x00000000       0x48 obj/syscalls.o
+ .ARM.exidx.text.os_perso_derive_and_set_seed
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_set_words
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_perso_set_words
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_set_devname
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_perso_set_devname
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_finalize
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_perso_finalize
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_isonboarded
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_perso_isonboarded
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_perso_get_devname
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_perso_get_devname
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_endorsement_get_code_hash
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_endorsement_get_code_hash
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_endorsement_get_public_key
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_endorsement_get_public_key
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_endorsement_get_public_key_certificate
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_endorsement_get_public_key_certificate
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_endorsement_key1_get_app_secret
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_endorsement_key1_get_app_secret
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_endorsement_key1_sign_data
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_endorsement_key1_sign_data
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_endorsement_key2_derive_sign_data
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_endorsement_key2_derive_sign_data
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_global_pin_check
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_global_pin_check
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_global_pin_retries
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_global_pin_retries
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_registry_count
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_registry_count
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_registry_get
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_registry_get
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_sched_exec
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_sched_exec
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_ux_register
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_ux_register
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_flags
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_flags
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_version
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_version
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_seph_features
+                0x00000000       0x38 obj/syscalls.o
+ .ARM.exidx.text.os_seph_features
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_seph_version
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_seph_version
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_setting_get
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_setting_get
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_setting_set
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_setting_set
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_get_memory_info
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_get_memory_info
+                0x00000000        0x8 obj/syscalls.o
+ .text.os_customca_verify
+                0x00000000       0x3c obj/syscalls.o
+ .ARM.exidx.text.os_customca_verify
+                0x00000000        0x8 obj/syscalls.o
+ .text          0x00000000        0x0 obj/usbd_ccid_cmd.o
+ .debug_str     0x00000000       0xf3 obj/usbd_ccid_cmd.o
+ .debug_loc     0x00000000        0x0 obj/usbd_ccid_cmd.o
+ .debug_abbrev  0x00000000       0x10 obj/usbd_ccid_cmd.o
+ .debug_info    0x00000000       0x1e obj/usbd_ccid_cmd.o
+ .debug_ranges  0x00000000        0x0 obj/usbd_ccid_cmd.o
+ .debug_macinfo
+                0x00000000        0x1 obj/usbd_ccid_cmd.o
+ .comment       0x00000000       0x2e obj/usbd_ccid_cmd.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_ccid_cmd.o
+ .ARM.attributes
+                0x00000000       0x3f obj/usbd_ccid_cmd.o
+ .debug_line    0x00000000       0x1d obj/usbd_ccid_cmd.o
+ .text          0x00000000        0x0 obj/usbd_ccid_core.o
+ .debug_str     0x00000000       0xf4 obj/usbd_ccid_core.o
+ .debug_loc     0x00000000        0x0 obj/usbd_ccid_core.o
+ .debug_abbrev  0x00000000       0x10 obj/usbd_ccid_core.o
+ .debug_info    0x00000000       0x1e obj/usbd_ccid_core.o
+ .debug_ranges  0x00000000        0x0 obj/usbd_ccid_core.o
+ .debug_macinfo
+                0x00000000        0x1 obj/usbd_ccid_core.o
+ .comment       0x00000000       0x2e obj/usbd_ccid_core.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_ccid_core.o
+ .ARM.attributes
+                0x00000000       0x3f obj/usbd_ccid_core.o
+ .debug_line    0x00000000       0x1d obj/usbd_ccid_core.o
+ .text          0x00000000        0x0 obj/usbd_ccid_if.o
+ .debug_str     0x00000000       0xf2 obj/usbd_ccid_if.o
+ .debug_loc     0x00000000        0x0 obj/usbd_ccid_if.o
+ .debug_abbrev  0x00000000       0x10 obj/usbd_ccid_if.o
+ .debug_info    0x00000000       0x1e obj/usbd_ccid_if.o
+ .debug_ranges  0x00000000        0x0 obj/usbd_ccid_if.o
+ .debug_macinfo
+                0x00000000        0x1 obj/usbd_ccid_if.o
+ .comment       0x00000000       0x2e obj/usbd_ccid_if.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_ccid_if.o
+ .ARM.attributes
+                0x00000000       0x3f obj/usbd_ccid_if.o
+ .debug_line    0x00000000       0x1d obj/usbd_ccid_if.o
+ .text          0x00000000        0x0 obj/usbd_conf.o
+ .text.USBD_LL_FlushEP
+                0x00000000        0x4 obj/usbd_conf.o
+ .ARM.exidx.text.USBD_LL_FlushEP
+                0x00000000        0x8 obj/usbd_conf.o
+ .text          0x00000000        0x0 obj/usbd_core.o
+ .text.USBD_Stop
+                0x00000000       0x28 obj/usbd_core.o
+ .ARM.exidx.text.USBD_Stop
+                0x00000000        0x8 obj/usbd_core.o
+ .text.USBD_RunTestMode
+                0x00000000        0x4 obj/usbd_core.o
+ .ARM.exidx.text.USBD_RunTestMode
+                0x00000000        0x8 obj/usbd_core.o
+ .text.USBD_LL_IsoINIncomplete
+                0x00000000        0x4 obj/usbd_core.o
+ .ARM.exidx.text.USBD_LL_IsoINIncomplete
+                0x00000000        0x8 obj/usbd_core.o
+ .text.USBD_LL_IsoOUTIncomplete
+                0x00000000        0x4 obj/usbd_core.o
+ .ARM.exidx.text.USBD_LL_IsoOUTIncomplete
+                0x00000000        0x8 obj/usbd_core.o
+ .text.USBD_LL_DevConnected
+                0x00000000        0x4 obj/usbd_core.o
+ .ARM.exidx.text.USBD_LL_DevConnected
+                0x00000000        0x8 obj/usbd_core.o
+ .text.USBD_LL_DevDisconnected
+                0x00000000        0xa obj/usbd_core.o
+ .ARM.exidx.text.USBD_LL_DevDisconnected
+                0x00000000        0x8 obj/usbd_core.o
+ .text          0x00000000        0x0 obj/usbd_ctlreq.o
+ .text.USBD_GetString
+                0x00000000       0x54 obj/usbd_ctlreq.o
+ .ARM.exidx.text.USBD_GetString
+                0x00000000        0x8 obj/usbd_ctlreq.o
+ .text.USBD_GetLen
+                0x00000000       0x1c obj/usbd_ctlreq.o
+ .ARM.exidx.text.USBD_GetLen
+                0x00000000        0x8 obj/usbd_ctlreq.o
+ .text          0x00000000        0x0 obj/usbd_hid.o
+ .text          0x00000000        0x0 obj/usbd_hid_impl.o
+ .text          0x00000000        0x0 obj/usbd_ioreq.o
+ .text.USBD_CtlPrepareRx
+                0x00000000       0x1e obj/usbd_ioreq.o
+ .ARM.exidx.text.USBD_CtlPrepareRx
+                0x00000000        0x8 obj/usbd_ioreq.o
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+ .text          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+ .text          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+ .text          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+ .data          0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+ .bss           0x00000000        0x0 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+DISCARD          0xd0000000         0x00100000         xrw
+FLASH            0xc0d00000         0x00064000         xr
+SRAM             0x20001800         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD obj/main.o
+LOAD obj/os.o
+LOAD obj/os_io_seproxyhal.o
+LOAD obj/os_printf.o
+LOAD obj/pic.o
+LOAD obj/pic_internal.o
+LOAD obj/syscalls.o
+LOAD obj/usbd_ccid_cmd.o
+LOAD obj/usbd_ccid_core.o
+LOAD obj/usbd_ccid_if.o
+LOAD obj/usbd_conf.o
+LOAD obj/usbd_core.o
+LOAD obj/usbd_ctlreq.o
+LOAD obj/usbd_hid.o
+LOAD obj/usbd_hid_impl.o
+LOAD obj/usbd_ioreq.o
+LOAD /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libm.a
+LOAD /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a
+LOAD /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a
+START GROUP
+LOAD /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a
+LOAD /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libg.a
+LOAD /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a
+END GROUP
+                0x00000040                PAGE_SIZE = 0x40
+                0x00000300                STACK_SIZE = 0x300
+                0x20002800                END_STACK = (ORIGIN (SRAM) + LENGTH (SRAM))
+
+.text           0xc0d00000     0x2980
+                0xc0d00000                _text = .
+                0xc0d00000                _nvram = .
+                [!provide]                PROVIDE (_setjmp, setjmp)
+ *(.boot*)
+ .boot          0xc0d00000       0x98 obj/main.o
+                0xc0d00000                main
+ *(.text*)
+ .text.io_exchange_al
+                0xc0d00098       0x50 obj/main.o
+                0xc0d00098                io_exchange_al
+ .text.io_seproxyhal_display
+                0xc0d000e8        0xa obj/main.o
+                0xc0d000e8                io_seproxyhal_display
+ *fill*         0xc0d000f2        0x2 00
+ .text.io_event
+                0xc0d000f4      0x374 obj/main.o
+                0xc0d000f4                io_event
+ .text.derive   0xc0d00468      0x230 obj/main.o
+ .text.ui_idle  0xc0d00698       0xa4 obj/main.o
+ .text.sample_main
+                0xc0d0073c      0x120 obj/main.o
+ .text.bagl_ui_sample_nanos_button
+                0xc0d0085c       0x74 obj/main.o
+ .text.bagl_ui_sample_nanos_prepro
+                0xc0d008d0       0x38 obj/main.o
+ .text.os_boot  0xc0d00908        0xc obj/os.o
+                0xc0d00908                os_boot
+ .text.io_usb_hid_receive
+                0xc0d00914      0x158 obj/os.o
+                0xc0d00914                io_usb_hid_receive
+ .text.os_memset
+                0xc0d00a6c       0x14 obj/os.o
+                0xc0d00a6c                os_memset
+ .text.os_memmove
+                0xc0d00a80       0x38 obj/os.o
+                0xc0d00a80                os_memmove
+ .text.io_usb_hid_init
+                0xc0d00ab8        0xc obj/os.o
+                0xc0d00ab8                io_usb_hid_init
+ .text.io_usb_hid_exchange
+                0xc0d00ac4       0xf0 obj/os.o
+                0xc0d00ac4                io_usb_hid_exchange
+ .text.io_seproxyhal_general_status
+                0xc0d00bb4       0x2c obj/os_io_seproxyhal.o
+                0xc0d00bb4                io_seproxyhal_general_status
+ .text.io_seproxyhal_handle_usb_event
+                0xc0d00be0       0x6c obj/os_io_seproxyhal.o
+                0xc0d00be0                io_seproxyhal_handle_usb_event
+ .text.io_seproxyhal_get_ep_rx_size
+                0xc0d00c4c       0x10 obj/os_io_seproxyhal.o
+                0xc0d00c4c                io_seproxyhal_get_ep_rx_size
+ .text.io_seproxyhal_handle_usb_ep_xfer_event
+                0xc0d00c5c       0x50 obj/os_io_seproxyhal.o
+                0xc0d00c5c                io_seproxyhal_handle_usb_ep_xfer_event
+ .text.io_usb_send_ep
+                0xc0d00cac       0xb8 obj/os_io_seproxyhal.o
+                0xc0d00cac                io_usb_send_ep
+ .text.io_seproxyhal_handle_event
+                0xc0d00d64       0x40 obj/os_io_seproxyhal.o
+                0xc0d00d64                io_seproxyhal_handle_event
+ .text.io_usb_send_apdu_data
+                0xc0d00da4       0x12 obj/os_io_seproxyhal.o
+                0xc0d00da4                io_usb_send_apdu_data
+ *fill*         0xc0d00db6        0x2 00
+ .text.io_seproxyhal_init
+                0xc0d00db8       0x54 obj/os_io_seproxyhal.o
+                0xc0d00db8                io_seproxyhal_init
+ .text.io_seproxyhal_init_ux
+                0xc0d00e0c        0xc obj/os_io_seproxyhal.o
+                0xc0d00e0c                io_seproxyhal_init_ux
+ .text.io_seproxyhal_touch_out
+                0xc0d00e18       0x48 obj/os_io_seproxyhal.o
+                0xc0d00e18                io_seproxyhal_touch_out
+ .text.io_seproxyhal_touch_over
+                0xc0d00e60       0x58 obj/os_io_seproxyhal.o
+                0xc0d00e60                io_seproxyhal_touch_over
+ .text.io_seproxyhal_touch_tap
+                0xc0d00eb8       0x48 obj/os_io_seproxyhal.o
+                0xc0d00eb8                io_seproxyhal_touch_tap
+ .text.io_seproxyhal_touch_element_callback
+                0xc0d00f00      0x110 obj/os_io_seproxyhal.o
+                0xc0d00f00                io_seproxyhal_touch_element_callback
+ .text.io_seproxyhal_display_icon
+                0xc0d01010       0x90 obj/os_io_seproxyhal.o
+                0xc0d01010                io_seproxyhal_display_icon
+ .text.io_seproxyhal_display_default
+                0xc0d010a0       0x84 obj/os_io_seproxyhal.o
+                0xc0d010a0                io_seproxyhal_display_default
+ .text.bagl_label_roundtrip_duration_ms
+                0xc0d01124        0xe obj/os_io_seproxyhal.o
+                0xc0d01124                bagl_label_roundtrip_duration_ms
+ .text.bagl_label_roundtrip_duration_ms_buf
+                0xc0d01132       0x50 obj/os_io_seproxyhal.o
+                0xc0d01132                bagl_label_roundtrip_duration_ms_buf
+ *fill*         0xc0d01182        0x2 00
+ .text.io_seproxyhal_setup_ticker
+                0xc0d01184       0x28 obj/os_io_seproxyhal.o
+                0xc0d01184                io_seproxyhal_setup_ticker
+ .text.io_seproxyhal_button_push
+                0xc0d011ac       0x78 obj/os_io_seproxyhal.o
+                0xc0d011ac                io_seproxyhal_button_push
+ .text.io_exchange
+                0xc0d01224      0x144 obj/os_io_seproxyhal.o
+                0xc0d01224                io_exchange
+ .text.os_ux_blocking
+                0xc0d01368       0x64 obj/os_io_seproxyhal.o
+                0xc0d01368                os_ux_blocking
+ .text.pic      0xc0d013cc       0x20 obj/pic.o
+                0xc0d013cc                pic
+ .text.pic_internal
+                0xc0d013ec       0x10 obj/pic_internal.o
+                0xc0d013ec                pic_internal
+ .text.check_api_level
+                0xc0d013fc       0x3c obj/syscalls.o
+                0xc0d013fc                check_api_level
+ .text.reset    0xc0d01438       0x38 obj/syscalls.o
+                0xc0d01438                reset
+ .text.cx_rng   0xc0d01470       0x3c obj/syscalls.o
+                0xc0d01470                cx_rng
+ .text.cx_ripemd160_init
+                0xc0d014ac       0x3c obj/syscalls.o
+                0xc0d014ac                cx_ripemd160_init
+ .text.cx_sha256_init
+                0xc0d014e8       0x3c obj/syscalls.o
+                0xc0d014e8                cx_sha256_init
+ .text.cx_hash  0xc0d01524       0x40 obj/syscalls.o
+                0xc0d01524                cx_hash
+ .text.cx_ecfp_init_private_key
+                0xc0d01564       0x3c obj/syscalls.o
+                0xc0d01564                cx_ecfp_init_private_key
+ .text.cx_ecfp_generate_pair
+                0xc0d015a0       0x3c obj/syscalls.o
+                0xc0d015a0                cx_ecfp_generate_pair
+ .text.os_perso_derive_node_bip32
+                0xc0d015dc       0x40 obj/syscalls.o
+                0xc0d015dc                os_perso_derive_node_bip32
+ .text.os_global_pin_is_validated
+                0xc0d0161c       0x38 obj/syscalls.o
+                0xc0d0161c                os_global_pin_is_validated
+ .text.os_global_pin_invalidate
+                0xc0d01654       0x38 obj/syscalls.o
+                0xc0d01654                os_global_pin_invalidate
+ .text.os_sched_exit
+                0xc0d0168c       0x3c obj/syscalls.o
+                0xc0d0168c                os_sched_exit
+ .text.os_ux    0xc0d016c8       0x3c obj/syscalls.o
+                0xc0d016c8                os_ux
+ .text.io_seproxyhal_spi_send
+                0xc0d01704       0x3c obj/syscalls.o
+                0xc0d01704                io_seproxyhal_spi_send
+ .text.io_seproxyhal_spi_is_status_sent
+                0xc0d01740       0x38 obj/syscalls.o
+                0xc0d01740                io_seproxyhal_spi_is_status_sent
+ .text.io_seproxyhal_spi_recv
+                0xc0d01778       0x40 obj/syscalls.o
+                0xc0d01778                io_seproxyhal_spi_recv
+ .text.USBD_LL_Init
+                0xc0d017b8       0x14 obj/usbd_conf.o
+                0xc0d017b8                USBD_LL_Init
+ .text.USBD_LL_DeInit
+                0xc0d017cc       0x24 obj/usbd_conf.o
+                0xc0d017cc                USBD_LL_DeInit
+ .text.USBD_LL_Start
+                0xc0d017f0       0x3a obj/usbd_conf.o
+                0xc0d017f0                USBD_LL_Start
+ .text.USBD_LL_Stop
+                0xc0d0182a       0x24 obj/usbd_conf.o
+                0xc0d0182a                USBD_LL_Stop
+ *fill*         0xc0d0184e        0x2 00
+ .text.USBD_LL_OpenEP
+                0xc0d01850       0x50 obj/usbd_conf.o
+                0xc0d01850                USBD_LL_OpenEP
+ .text.USBD_LL_CloseEP
+                0xc0d018a0       0x2e obj/usbd_conf.o
+                0xc0d018a0                USBD_LL_CloseEP
+ *fill*         0xc0d018ce        0x2 00
+ .text.USBD_LL_StallEP
+                0xc0d018d0       0x4c obj/usbd_conf.o
+                0xc0d018d0                USBD_LL_StallEP
+ .text.USBD_LL_ClearStallEP
+                0xc0d0191c       0x4c obj/usbd_conf.o
+                0xc0d0191c                USBD_LL_ClearStallEP
+ .text.USBD_LL_IsStallEP
+                0xc0d01968       0x24 obj/usbd_conf.o
+                0xc0d01968                USBD_LL_IsStallEP
+ .text.USBD_LL_SetUSBAddress
+                0xc0d0198c       0x26 obj/usbd_conf.o
+                0xc0d0198c                USBD_LL_SetUSBAddress
+ .text.USBD_LL_Transmit
+                0xc0d019b2       0x34 obj/usbd_conf.o
+                0xc0d019b2                USBD_LL_Transmit
+ .text.USBD_LL_PrepareReceive
+                0xc0d019e6       0x28 obj/usbd_conf.o
+                0xc0d019e6                USBD_LL_PrepareReceive
+ .text.USBD_Init
+                0xc0d01a0e       0x3c obj/usbd_core.o
+                0xc0d01a0e                USBD_Init
+ .text.USBD_DeInit
+                0xc0d01a4a       0x34 obj/usbd_core.o
+                0xc0d01a4a                USBD_DeInit
+ .text.USBD_RegisterClass
+                0xc0d01a7e       0x12 obj/usbd_core.o
+                0xc0d01a7e                USBD_RegisterClass
+ .text.USBD_Start
+                0xc0d01a90        0xc obj/usbd_core.o
+                0xc0d01a90                USBD_Start
+ .text.USBD_SetClassConfig
+                0xc0d01a9c       0x30 obj/usbd_core.o
+                0xc0d01a9c                USBD_SetClassConfig
+ .text.USBD_ClrClassConfig
+                0xc0d01acc       0x24 obj/usbd_core.o
+                0xc0d01acc                USBD_ClrClassConfig
+ .text.USBD_LL_SetupStage
+                0xc0d01af0       0x64 obj/usbd_core.o
+                0xc0d01af0                USBD_LL_SetupStage
+ .text.USBD_LL_DataOutStage
+                0xc0d01b54       0x8c obj/usbd_core.o
+                0xc0d01b54                USBD_LL_DataOutStage
+ .text.USBD_LL_DataInStage
+                0xc0d01be0       0xc8 obj/usbd_core.o
+                0xc0d01be0                USBD_LL_DataInStage
+ .text.USBD_LL_Reset
+                0xc0d01ca8       0x30 obj/usbd_core.o
+                0xc0d01ca8                USBD_LL_Reset
+ .text.USBD_LL_SetSpeed
+                0xc0d01cd8        0x6 obj/usbd_core.o
+                0xc0d01cd8                USBD_LL_SetSpeed
+ .text.USBD_LL_Suspend
+                0xc0d01cde        0x4 obj/usbd_core.o
+                0xc0d01cde                USBD_LL_Suspend
+ .text.USBD_LL_Resume
+                0xc0d01ce2        0x4 obj/usbd_core.o
+                0xc0d01ce2                USBD_LL_Resume
+ .text.USBD_LL_SOF
+                0xc0d01ce6       0x28 obj/usbd_core.o
+                0xc0d01ce6                USBD_LL_SOF
+ *fill*         0xc0d01d0e        0x2 00
+ .text.USBD_StdDevReq
+                0xc0d01d10       0x6a obj/usbd_ctlreq.o
+                0xc0d01d10                USBD_StdDevReq
+ *fill*         0xc0d01d7a        0x2 00
+ .text.USBD_GetDescriptor
+                0xc0d01d7c      0x110 obj/usbd_ctlreq.o
+                0xc0d01d7c                USBD_GetDescriptor
+ .text.USBD_SetAddress
+                0xc0d01e8c       0x5c obj/usbd_ctlreq.o
+                0xc0d01e8c                USBD_SetAddress
+ .text.USBD_SetConfig
+                0xc0d01ee8       0x7c obj/usbd_ctlreq.o
+                0xc0d01ee8                USBD_SetConfig
+ .text.USBD_GetConfig
+                0xc0d01f64       0x40 obj/usbd_ctlreq.o
+                0xc0d01f64                USBD_GetConfig
+ .text.USBD_GetStatus
+                0xc0d01fa4       0x52 obj/usbd_ctlreq.o
+                0xc0d01fa4                USBD_GetStatus
+ .text.USBD_SetFeature
+                0xc0d01ff6       0x32 obj/usbd_ctlreq.o
+                0xc0d01ff6                USBD_SetFeature
+ .text.USBD_ClrFeature
+                0xc0d02028       0x50 obj/usbd_ctlreq.o
+                0xc0d02028                USBD_ClrFeature
+ .text.USBD_CtlError
+                0xc0d02078       0x16 obj/usbd_ctlreq.o
+                0xc0d02078                USBD_CtlError
+ .text.USBD_StdItfReq
+                0xc0d0208e       0x50 obj/usbd_ctlreq.o
+                0xc0d0208e                USBD_StdItfReq
+ .text.USBD_StdEPReq
+                0xc0d020de       0xf8 obj/usbd_ctlreq.o
+                0xc0d020de                USBD_StdEPReq
+ .text.USBD_ParseSetupRequest
+                0xc0d021d6       0x28 obj/usbd_ctlreq.o
+                0xc0d021d6                USBD_ParseSetupRequest
+ .text.USBD_HID_Setup
+                0xc0d021fe       0x9c obj/usbd_hid.o
+                0xc0d021fe                USBD_HID_Setup
+ .text.USBD_HID_Init
+                0xc0d0229a       0x32 obj/usbd_hid.o
+                0xc0d0229a                USBD_HID_Init
+ .text.USBD_HID_DeInit
+                0xc0d022cc       0x18 obj/usbd_hid.o
+                0xc0d022cc                USBD_HID_DeInit
+ .text.USBD_HID_GetHidDescriptor_impl
+                0xc0d022e4       0x10 obj/usbd_hid_impl.o
+                0xc0d022e4                USBD_HID_GetHidDescriptor_impl
+ .text.USBD_HID_GetReportDescriptor_impl
+                0xc0d022f4       0x10 obj/usbd_hid_impl.o
+                0xc0d022f4                USBD_HID_GetReportDescriptor_impl
+ .text.USBD_HID_DataOut_impl
+                0xc0d02304       0x58 obj/usbd_hid_impl.o
+                0xc0d02304                USBD_HID_DataOut_impl
+ .text.USB_power
+                0xc0d0235c       0x5c obj/usbd_hid_impl.o
+                0xc0d0235c                USB_power
+ .text.USBD_DeviceDescriptor
+                0xc0d023b8       0x10 obj/usbd_hid_impl.o
+ .text.USBD_LangIDStrDescriptor
+                0xc0d023c8       0x10 obj/usbd_hid_impl.o
+ .text.USBD_ManufacturerStrDescriptor
+                0xc0d023d8       0x10 obj/usbd_hid_impl.o
+ .text.USBD_ProductStrDescriptor
+                0xc0d023e8       0x10 obj/usbd_hid_impl.o
+ .text.USBD_SerialStrDescriptor
+                0xc0d023f8       0x10 obj/usbd_hid_impl.o
+ .text.USBD_ConfigStrDescriptor
+                0xc0d02408       0x10 obj/usbd_hid_impl.o
+ .text.USBD_InterfaceStrDescriptor
+                0xc0d02418       0x10 obj/usbd_hid_impl.o
+ .text.USBD_GetCfgDesc_impl
+                0xc0d02428       0x10 obj/usbd_hid_impl.o
+ .text.USBD_GetDeviceQualifierDesc_impl
+                0xc0d02438       0x10 obj/usbd_hid_impl.o
+ .text.USBD_CtlSendData
+                0xc0d02448       0x2e obj/usbd_ioreq.o
+                0xc0d02448                USBD_CtlSendData
+ .text.USBD_CtlContinueSendData
+                0xc0d02476       0x1e obj/usbd_ioreq.o
+                0xc0d02476                USBD_CtlContinueSendData
+ .text.USBD_CtlContinueRx
+                0xc0d02494       0x10 obj/usbd_ioreq.o
+                0xc0d02494                USBD_CtlContinueRx
+ .text.USBD_CtlSendStatus
+                0xc0d024a4       0x1a obj/usbd_ioreq.o
+                0xc0d024a4                USBD_CtlSendStatus
+ .text.USBD_CtlReceiveStatus
+                0xc0d024be       0x18 obj/usbd_ioreq.o
+                0xc0d024be                USBD_CtlReceiveStatus
+ *fill*         0xc0d024d6        0x2 00
+ .text          0xc0d024d8      0x114 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+                0xc0d024d8                __udivsi3
+                0xc0d024d8                __aeabi_uidiv
+                0xc0d025e4                __aeabi_uidivmod
+ .text          0xc0d025ec        0x4 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+                0xc0d025ec                __aeabi_ldiv0
+                0xc0d025ec                __aeabi_idiv0
+ .text.__aeabi_memclr
+                0xc0d025f0        0xc /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+                0xc0d025f0                __aeabi_memclr8
+                0xc0d025f0                __aeabi_memclr
+                0xc0d025f0                __aeabi_memclr4
+ .text.__aeabi_memset
+                0xc0d025fc       0x10 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+                0xc0d025fc                __aeabi_memset
+                0xc0d025fc                __aeabi_memset8
+                0xc0d025fc                __aeabi_memset4
+ .text.memset   0xc0d0260c       0x8c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+                0xc0d0260c                memset
+ .text          0xc0d02698       0x34 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+                0xc0d02698                setjmp
+                0xc0d026b0                longjmp
+ .text.strlen   0xc0d026cc       0x68 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+                0xc0d026cc                strlen
+ *(.rodata.[^N]*)
+ .rodata.bagl_ui_sample_nanos
+                0xc0d02734      0x118 obj/main.o
+ .rodata.str1.1
+                0xc0d0284c        0x8 obj/main.o
+ .rodata.USBD_PRODUCT_FS_STRING
+                0xc0d02854        0xe obj/usbd_hid_impl.o
+                0xc0d02854                USBD_PRODUCT_FS_STRING
+ .rodata.HID_ReportDesc
+                0xc0d02862       0x22 obj/usbd_hid_impl.o
+                0xc0d02862                HID_ReportDesc
+ .rodata.USBD_HID_Desc
+                0xc0d02884        0x9 obj/usbd_hid_impl.o
+                0xc0d02884                USBD_HID_Desc
+ .rodata.USBD_DeviceDesc
+                0xc0d0288d       0x12 obj/usbd_hid_impl.o
+                0xc0d0288d                USBD_DeviceDesc
+ *fill*         0xc0d0289f        0x1 00
+ .rodata.HID_Desc
+                0xc0d028a0       0x20 obj/usbd_hid_impl.o
+ .rodata.USBD_LangIDDesc
+                0xc0d028c0        0x4 obj/usbd_hid_impl.o
+ .rodata.USBD_MANUFACTURER_STRING
+                0xc0d028c4        0xe obj/usbd_hid_impl.o
+ .rodata.USB_SERIAL_STRING
+                0xc0d028d2        0xa obj/usbd_hid_impl.o
+ .rodata.USBD_HID
+                0xc0d028dc       0x38 obj/usbd_hid_impl.o
+ .rodata.USBD_CfgDesc
+                0xc0d02914       0x29 obj/usbd_hid_impl.o
+ *fill*         0xc0d0293d        0x3 00
+ .rodata.USBD_DeviceQualifierDesc
+                0xc0d02940        0xa obj/usbd_hid_impl.o
+ *(.rodata.N[^_]*)
+ .rodata.NOT_AVAILABLE
+                0xc0d0294a        0xe obj/main.o
+                0xc0d02958                . = ALIGN (0x4)
+                0xc0d02958                _etext = .
+                0xc0d02980                . = ALIGN (PAGE_SIZE)
+ *fill*         0xc0d02958       0x28 00
+ *(.bss.N_* .rodata.N_*)
+                0xc0d02980                . = ALIGN (PAGE_SIZE)
+                0xc0d02980                _envram = .
+
+.glue_7         0xc0d02980        0x0
+ .glue_7        0xc0d02980        0x0 linker stubs
+
+.glue_7t        0xc0d02980        0x0
+ .glue_7t       0xc0d02980        0x0 linker stubs
+
+.vfp11_veneer   0xc0d02980        0x0
+ .vfp11_veneer  0xc0d02980        0x0 linker stubs
+
+.v4_bx          0xc0d02980        0x0
+ .v4_bx         0xc0d02980        0x0 linker stubs
+
+.iplt           0xc0d02980        0x0
+ .iplt          0xc0d02980        0x0 obj/main.o
+
+.data           0xd0000000        0x0
+                0xd0000000                . = ALIGN (0x4)
+                0xd0000000                _data = .
+ *(vtable)
+ *(.data*)
+                0xd0000000                _edata = .
+
+.igot.plt       0xd0000000        0x0
+ .igot.plt      0xd0000000        0x0 obj/main.o
+
+.bss            0x20001800      0x748
+                0x20001800                _bss = .
+ *(.bss*)
+ .bss.G_io_seproxyhal_spi_buffer
+                0x20001800       0x80 obj/main.o
+                0x20001800                G_io_seproxyhal_spi_buffer
+ .bss.ux        0x20001880       0xb0 obj/main.o
+                0x20001880                ux
+ .bss.path      0x20001930       0x14 obj/main.o
+ .bss.address   0x20001944       0x64 obj/main.o
+ .bss.G_try_last_open_context
+                0x200019a8        0x4 obj/os.o
+                0x200019a8                G_try_last_open_context
+ .bss.G_io_hid_chunk
+                0x200019ac       0x40 obj/os.o
+                0x200019ac                G_io_hid_chunk
+ .bss.G_io_usb_hid_sequence_number
+                0x200019ec        0x4 obj/os.o
+                0x200019ec                G_io_usb_hid_sequence_number
+ .bss.G_io_usb_hid_total_length
+                0x200019f0        0x4 obj/os.o
+                0x200019f0                G_io_usb_hid_total_length
+ .bss.G_io_usb_hid_remaining_length
+                0x200019f4        0x4 obj/os.o
+                0x200019f4                G_io_usb_hid_remaining_length
+ .bss.G_io_apdu_buffer
+                0x200019f8      0x104 obj/os.o
+                0x200019f8                G_io_apdu_buffer
+ .bss.G_io_usb_hid_current_buffer
+                0x20001afc        0x4 obj/os.o
+                0x20001afc                G_io_usb_hid_current_buffer
+ .bss.G_io_apdu_media
+                0x20001b00        0x1 obj/os_io_seproxyhal.o
+                0x20001b00                G_io_apdu_media
+ .bss.G_io_usb_ep_xfer_len
+                0x20001b01        0x7 obj/os_io_seproxyhal.o
+ .bss.G_io_apdu_state
+                0x20001b08        0x1 obj/os_io_seproxyhal.o
+                0x20001b08                G_io_apdu_state
+ *fill*         0x20001b09        0x1 00
+ .bss.G_io_apdu_offset
+                0x20001b0a        0x2 obj/os_io_seproxyhal.o
+                0x20001b0a                G_io_apdu_offset
+ .bss.G_io_apdu_length
+                0x20001b0c        0x2 obj/os_io_seproxyhal.o
+                0x20001b0c                G_io_apdu_length
+ .bss.G_io_apdu_seq
+                0x20001b0e        0x2 obj/os_io_seproxyhal.o
+                0x20001b0e                G_io_apdu_seq
+ .bss.G_bagl_last_touched_not_released_component
+                0x20001b10        0x4 obj/os_io_seproxyhal.o
+                0x20001b10                G_bagl_last_touched_not_released_component
+ .bss.G_button_mask
+                0x20001b14        0x4 obj/os_io_seproxyhal.o
+                0x20001b14                G_button_mask
+ .bss.G_button_same_mask_counter
+                0x20001b18        0x4 obj/os_io_seproxyhal.o
+                0x20001b18                G_button_same_mask_counter
+ .bss.ep_in_stall
+                0x20001b1c        0x4 obj/usbd_conf.o
+                0x20001b1c                ep_in_stall
+ .bss.ep_out_stall
+                0x20001b20        0x4 obj/usbd_conf.o
+                0x20001b20                ep_out_stall
+ .bss.USBD_Device
+                0x20001b24      0x124 obj/usbd_core.o
+                0x20001b24                USBD_Device
+                0x20001c48                _ebss = .
+                0x20001c48                _stack = .
+                0x20001f48                . = (_stack + STACK_SIZE)
+ *fill*         0x20001c48      0x300 00
+                [!provide]                PROVIDE (_stack_size, STACK_SIZE)
+                [!provide]                PROVIDE (_estack, ABSOLUTE (END_STACK))
+
+DEBUG           0xd0000000        0x8
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.text.io_exchange_al
+                0xd0000000        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_display
+                0xd0000000        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_event
+                0xd0000000        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.boot
+                0xd0000000        0x8 obj/main.o
+ .ARM.exidx.text.derive
+                0xd0000008        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.ui_idle
+                0xd0000008        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.sample_main
+                0xd0000008        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.bagl_ui_sample_nanos_button
+                0xd0000008        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.bagl_ui_sample_nanos_prepro
+                0xd0000008        0x0 obj/main.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_boot
+                0xd0000008        0x0 obj/os.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_usb_hid_receive
+                0xd0000008        0x0 obj/os.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_memset
+                0xd0000008        0x0 obj/os.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_memmove
+                0xd0000008        0x0 obj/os.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_usb_hid_init
+                0xd0000008        0x0 obj/os.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_usb_hid_exchange
+                0xd0000008        0x0 obj/os.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_general_status
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_handle_usb_event
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_get_ep_rx_size
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_handle_usb_ep_xfer_event
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_usb_send_ep
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_handle_event
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_usb_send_apdu_data
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_init
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_init_ux
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_touch_out
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_touch_over
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_touch_tap
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_touch_element_callback
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_display_icon
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_display_default
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.bagl_label_roundtrip_duration_ms
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.bagl_label_roundtrip_duration_ms_buf
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_setup_ticker
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_button_push
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_exchange
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_ux_blocking
+                0xd0000008        0x0 obj/os_io_seproxyhal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.pic
+                0xd0000008        0x0 obj/pic.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.pic_internal
+                0xd0000008        0x0 obj/pic_internal.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.check_api_level
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.reset
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.cx_rng
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.cx_ripemd160_init
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.cx_sha256_init
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.cx_hash
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.cx_ecfp_init_private_key
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.cx_ecfp_generate_pair
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_perso_derive_node_bip32
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_global_pin_is_validated
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_global_pin_invalidate
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_sched_exit
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.os_ux
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_spi_send
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_spi_is_status_sent
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.io_seproxyhal_spi_recv
+                0xd0000008        0x0 obj/syscalls.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Init
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_DeInit
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Start
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Stop
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_OpenEP
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_CloseEP
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_StallEP
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_ClearStallEP
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_IsStallEP
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_SetUSBAddress
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Transmit
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_PrepareReceive
+                0xd0000008        0x0 obj/usbd_conf.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_Init
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_DeInit
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_RegisterClass
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_Start
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_SetClassConfig
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_ClrClassConfig
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_SetupStage
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_DataOutStage
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_DataInStage
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Reset
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_SetSpeed
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Suspend
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_Resume
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LL_SOF
+                0xd0000008        0x0 obj/usbd_core.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_StdDevReq
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_GetDescriptor
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_SetAddress
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_SetConfig
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_GetConfig
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_GetStatus
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_SetFeature
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_ClrFeature
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_CtlError
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_StdItfReq
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_StdEPReq
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_ParseSetupRequest
+                0xd0000008        0x0 obj/usbd_ctlreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_HID_Setup
+                0xd0000008        0x0 obj/usbd_hid.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_HID_Init
+                0xd0000008        0x0 obj/usbd_hid.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_HID_DeInit
+                0xd0000008        0x0 obj/usbd_hid.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_HID_GetHidDescriptor_impl
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_HID_GetReportDescriptor_impl
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_HID_DataOut_impl
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USB_power
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_DeviceDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_LangIDStrDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_ManufacturerStrDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_ProductStrDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_SerialStrDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_ConfigStrDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_InterfaceStrDescriptor
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_GetCfgDesc_impl
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_GetDeviceQualifierDesc_impl
+                0xd0000008        0x0 obj/usbd_hid_impl.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_CtlSendData
+                0xd0000008        0x0 obj/usbd_ioreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_CtlContinueSendData
+                0xd0000008        0x0 obj/usbd_ioreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_CtlContinueRx
+                0xd0000008        0x0 obj/usbd_ioreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_CtlSendStatus
+                0xd0000008        0x0 obj/usbd_ioreq.o
+                                  0x8 (size before relaxing)
+ .ARM.exidx.text.USBD_CtlReceiveStatus
+                0xd0000008        0x0 obj/usbd_ioreq.o
+                                  0x8 (size before relaxing)
+
+.rel.dyn        0xd0000008        0x0
+ .rel.iplt      0xd0000008        0x0 obj/main.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2d
+ *(.comment)
+ .comment       0x00000000       0x2d obj/main.o
+                                 0x2e (size before relaxing)
+ .comment       0x0000002d       0x2e obj/os.o
+ .comment       0x0000002d       0x2e obj/os_io_seproxyhal.o
+ .comment       0x0000002d       0x2e obj/pic.o
+ .comment       0x0000002d       0x2e obj/pic_internal.o
+ .comment       0x0000002d       0x2e obj/syscalls.o
+ .comment       0x0000002d       0x2e obj/usbd_conf.o
+ .comment       0x0000002d       0x2e obj/usbd_core.o
+ .comment       0x0000002d       0x2e obj/usbd_ctlreq.o
+ .comment       0x0000002d       0x2e obj/usbd_hid.o
+ .comment       0x0000002d       0x2e obj/usbd_hid_impl.o
+ .comment       0x0000002d       0x2e obj/usbd_ioreq.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 obj/main.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/os.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/os_io_seproxyhal.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/pic.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/pic_internal.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/syscalls.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_conf.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_core.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_ctlreq.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_hid.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_hid_impl.o
+ .note.GNU-stack
+                0x00000000        0x0 obj/usbd_ioreq.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x41 obj/main.o
+ .ARM.attributes
+                0x00000041       0x41 obj/os.o
+ .ARM.attributes
+                0x00000082       0x41 obj/os_io_seproxyhal.o
+ .ARM.attributes
+                0x000000c3       0x41 obj/pic.o
+ .ARM.attributes
+                0x00000104       0x41 obj/pic_internal.o
+ .ARM.attributes
+                0x00000145       0x41 obj/syscalls.o
+ .ARM.attributes
+                0x00000186       0x41 obj/usbd_conf.o
+ .ARM.attributes
+                0x000001c7       0x41 obj/usbd_core.o
+ .ARM.attributes
+                0x00000208       0x41 obj/usbd_ctlreq.o
+ .ARM.attributes
+                0x00000249       0x41 obj/usbd_hid.o
+ .ARM.attributes
+                0x0000028a       0x41 obj/usbd_hid_impl.o
+ .ARM.attributes
+                0x000002cb       0x41 obj/usbd_ioreq.o
+ .ARM.attributes
+                0x0000030c       0x1e /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000032a       0x1e /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000348       0x2c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+ .ARM.attributes
+                0x00000374       0x2c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+ .ARM.attributes
+                0x000003a0       0x2c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000003cc       0x1c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+ .ARM.attributes
+                0x000003e8       0x2c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+                0x00000000     0x19d3
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x19e obj/main.o
+ .debug_pubnames
+                0x0000019e      0x16b obj/os.o
+ .debug_pubnames
+                0x00000309      0x5bd obj/os_io_seproxyhal.o
+ .debug_pubnames
+                0x000008c6       0x1a obj/pic.o
+ .debug_pubnames
+                0x000008e0       0x23 obj/pic_internal.o
+ .debug_pubnames
+                0x00000903      0x938 obj/syscalls.o
+ .debug_pubnames
+                0x0000123b      0x142 obj/usbd_conf.o
+ .debug_pubnames
+                0x0000137d      0x1cd obj/usbd_core.o
+ .debug_pubnames
+                0x0000154a      0x126 obj/usbd_ctlreq.o
+ .debug_pubnames
+                0x00001670       0x4b obj/usbd_hid.o
+ .debug_pubnames
+                0x000016bb      0x276 obj/usbd_hid_impl.o
+ .debug_pubnames
+                0x00001931       0xa2 obj/usbd_ioreq.o
+
+.debug_info     0x00000000     0x9894
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x101c obj/main.o
+ .debug_info    0x0000101c      0x4ca obj/os.o
+ .debug_info    0x000014e6     0x1761 obj/os_io_seproxyhal.o
+ .debug_info    0x00002c47       0x55 obj/pic.o
+ .debug_info    0x00002c9c       0x45 obj/pic_internal.o
+ .debug_info    0x00002ce1     0x3757 obj/syscalls.o
+ .debug_info    0x00006438      0x94f obj/usbd_conf.o
+ .debug_info    0x00006d87      0x9c2 obj/usbd_core.o
+ .debug_info    0x00007749      0xa3f obj/usbd_ctlreq.o
+ .debug_info    0x00008188      0x666 obj/usbd_hid.o
+ .debug_info    0x000087ee      0x9a2 obj/usbd_hid_impl.o
+ .debug_info    0x00009190      0x704 obj/usbd_ioreq.o
+
+.debug_abbrev   0x00000000     0x1223
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x2b2 obj/main.o
+ .debug_abbrev  0x000002b2      0x22a obj/os.o
+ .debug_abbrev  0x000004dc      0x2d9 obj/os_io_seproxyhal.o
+ .debug_abbrev  0x000007b5       0x45 obj/pic.o
+ .debug_abbrev  0x000007fa       0x36 obj/pic_internal.o
+ .debug_abbrev  0x00000830      0x1c7 obj/syscalls.o
+ .debug_abbrev  0x000009f7      0x151 obj/usbd_conf.o
+ .debug_abbrev  0x00000b48      0x16d obj/usbd_core.o
+ .debug_abbrev  0x00000cb5      0x1d5 obj/usbd_ctlreq.o
+ .debug_abbrev  0x00000e8a       0xfc obj/usbd_hid.o
+ .debug_abbrev  0x00000f86      0x1b0 obj/usbd_hid_impl.o
+ .debug_abbrev  0x00001136       0xed obj/usbd_ioreq.o
+
+.debug_line     0x00000000     0x4b4d
+ *(.debug_line)
+ .debug_line    0x00000000      0x5ff obj/main.o
+ .debug_line    0x000005ff      0x3d2 obj/os.o
+ .debug_line    0x000009d1     0x1035 obj/os_io_seproxyhal.o
+ .debug_line    0x00001a06       0x99 obj/pic.o
+ .debug_line    0x00001a9f       0x93 obj/pic_internal.o
+ .debug_line    0x00001b32     0x18bd obj/syscalls.o
+ .debug_line    0x000033ef      0x317 obj/usbd_conf.o
+ .debug_line    0x00003706      0x53f obj/usbd_core.o
+ .debug_line    0x00003c45      0x68d obj/usbd_ctlreq.o
+ .debug_line    0x000042d2      0x266 obj/usbd_hid.o
+ .debug_line    0x00004538      0x3a8 obj/usbd_hid_impl.o
+ .debug_line    0x000048e0      0x26d obj/usbd_ioreq.o
+
+.debug_frame    0x00000000     0x1c84
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x13c obj/main.o
+ .debug_frame   0x0000013c      0x118 obj/os.o
+ .debug_frame   0x00000254      0x4b8 obj/os_io_seproxyhal.o
+ .debug_frame   0x0000070c       0x2c obj/pic.o
+ .debug_frame   0x00000738       0x20 obj/pic_internal.o
+ .debug_frame   0x00000758      0xccc obj/syscalls.o
+ .debug_frame   0x00001424      0x188 obj/usbd_conf.o
+ .debug_frame   0x000015ac      0x20c obj/usbd_core.o
+ .debug_frame   0x000017b8      0x1bc obj/usbd_ctlreq.o
+ .debug_frame   0x00001974       0x78 obj/usbd_hid.o
+ .debug_frame   0x000019ec      0x104 obj/usbd_hid_impl.o
+ .debug_frame   0x00001af0       0xd0 obj/usbd_ioreq.o
+ .debug_frame   0x00001bc0       0x20 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001be0       0x28 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+ .debug_frame   0x00001c08       0x28 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+ .debug_frame   0x00001c30       0x2c /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+ .debug_frame   0x00001c5c       0x28 /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+
+.debug_str      0x00000000     0x3403
+ *(.debug_str)
+ .debug_str     0x00000000      0xb90 obj/main.o
+                                0xc65 (size before relaxing)
+ .debug_str     0x00000b90      0x234 obj/os.o
+                                0x32f (size before relaxing)
+ .debug_str     0x00000dc4      0xba3 obj/os_io_seproxyhal.o
+                               0x14d9 (size before relaxing)
+ .debug_str     0x00001967       0x63 obj/pic.o
+                                 0xd9 (size before relaxing)
+ .debug_str     0x000019ca       0x68 obj/pic_internal.o
+                                 0xde (size before relaxing)
+ .debug_str     0x00001a32      0xbe4 obj/syscalls.o
+                               0x14cb (size before relaxing)
+ .debug_str     0x00002616      0x663 obj/usbd_conf.o
+                                0x7b3 (size before relaxing)
+ .debug_str     0x00002c79      0x20c obj/usbd_core.o
+                                0x84c (size before relaxing)
+ .debug_str     0x00002e85      0x166 obj/usbd_ctlreq.o
+                                0x7d6 (size before relaxing)
+ .debug_str     0x00002feb       0xb5 obj/usbd_hid.o
+                                0x6e6 (size before relaxing)
+ .debug_str     0x000030a0      0x26a obj/usbd_hid_impl.o
+                                0x9a4 (size before relaxing)
+ .debug_str     0x0000330a       0xf9 obj/usbd_ioreq.o
+                                0x732 (size before relaxing)
+
+.debug_loc      0x00000000     0x39a1
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x394 obj/main.o
+ .debug_loc     0x00000394      0x277 obj/os.o
+ .debug_loc     0x0000060b      0xa8e obj/os_io_seproxyhal.o
+ .debug_loc     0x00001099       0x13 obj/pic.o
+ .debug_loc     0x000010ac        0x0 obj/pic_internal.o
+ .debug_loc     0x000010ac     0x1cc7 obj/syscalls.o
+ .debug_loc     0x00002d73      0x212 obj/usbd_conf.o
+ .debug_loc     0x00002f85      0x29f obj/usbd_core.o
+ .debug_loc     0x00003224      0x44d obj/usbd_ctlreq.o
+ .debug_loc     0x00003671      0x113 obj/usbd_hid.o
+ .debug_loc     0x00003784       0xf2 obj/usbd_hid_impl.o
+ .debug_loc     0x00003876      0x12b obj/usbd_ioreq.o
+
+.debug_macinfo  0x00000000        0xc
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x00000000        0x1 obj/main.o
+ .debug_macinfo
+                0x00000001        0x1 obj/os.o
+ .debug_macinfo
+                0x00000002        0x1 obj/os_io_seproxyhal.o
+ .debug_macinfo
+                0x00000003        0x1 obj/pic.o
+ .debug_macinfo
+                0x00000004        0x1 obj/pic_internal.o
+ .debug_macinfo
+                0x00000005        0x1 obj/syscalls.o
+ .debug_macinfo
+                0x00000006        0x1 obj/usbd_conf.o
+ .debug_macinfo
+                0x00000007        0x1 obj/usbd_core.o
+ .debug_macinfo
+                0x00000008        0x1 obj/usbd_ctlreq.o
+ .debug_macinfo
+                0x00000009        0x1 obj/usbd_hid.o
+ .debug_macinfo
+                0x0000000a        0x1 obj/usbd_hid_impl.o
+ .debug_macinfo
+                0x0000000b        0x1 obj/usbd_ioreq.o
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(bin/app.elf elf32-littlearm)
+
+.debug_ranges   0x00000000      0x980
+ .debug_ranges  0x00000000      0x150 obj/main.o
+ .debug_ranges  0x00000150       0x50 obj/os.o
+ .debug_ranges  0x000001a0      0x220 obj/os_io_seproxyhal.o
+ .debug_ranges  0x000003c0        0x0 obj/pic.o
+ .debug_ranges  0x000003c0        0x0 obj/pic_internal.o
+ .debug_ranges  0x000003c0      0x368 obj/syscalls.o
+ .debug_ranges  0x00000728       0x70 obj/usbd_conf.o
+ .debug_ranges  0x00000798       0xa8 obj/usbd_core.o
+ .debug_ranges  0x00000840       0x78 obj/usbd_ctlreq.o
+ .debug_ranges  0x000008b8       0x20 obj/usbd_hid.o
+ .debug_ranges  0x000008d8       0x70 obj/usbd_hid_impl.o
+ .debug_ranges  0x00000948       0x38 obj/usbd_ioreq.o
+
+.debug_pubtypes
+                0x00000000     0x1ee2
+ .debug_pubtypes
+                0x00000000      0x2e7 obj/main.o
+ .debug_pubtypes
+                0x000002e7       0xf5 obj/os.o
+ .debug_pubtypes
+                0x000003dc      0x338 obj/os_io_seproxyhal.o
+ .debug_pubtypes
+                0x00000714       0x23 obj/pic.o
+ .debug_pubtypes
+                0x00000737       0x23 obj/pic_internal.o
+ .debug_pubtypes
+                0x0000075a      0x3ac obj/syscalls.o
+ .debug_pubtypes
+                0x00000b06      0x357 obj/usbd_conf.o
+ .debug_pubtypes
+                0x00000e5d      0x357 obj/usbd_core.o
+ .debug_pubtypes
+                0x000011b4      0x357 obj/usbd_ctlreq.o
+ .debug_pubtypes
+                0x0000150b      0x340 obj/usbd_hid.o
+ .debug_pubtypes
+                0x0000184b      0x340 obj/usbd_hid_impl.o
+ .debug_pubtypes
+                0x00001b8b      0x357 obj/usbd_ioreq.o
+
+Cross Reference Table
+
+Symbol                                            File
+G_bagl_last_touched_not_released_component        obj/os_io_seproxyhal.o
+G_button_mask                                     obj/os_io_seproxyhal.o
+G_button_same_mask_counter                        obj/os_io_seproxyhal.o
+G_io_apdu_buffer                                  obj/os.o
+                                                  obj/main.o
+G_io_apdu_length                                  obj/os_io_seproxyhal.o
+                                                  obj/usbd_hid_impl.o
+G_io_apdu_media                                   obj/os_io_seproxyhal.o
+                                                  obj/usbd_hid_impl.o
+G_io_apdu_offset                                  obj/os_io_seproxyhal.o
+G_io_apdu_seq                                     obj/os_io_seproxyhal.o
+G_io_apdu_state                                   obj/os_io_seproxyhal.o
+                                                  obj/usbd_hid_impl.o
+G_io_hid_chunk                                    obj/os.o
+G_io_seproxyhal_spi_buffer                        obj/main.o
+                                                  obj/usbd_conf.o
+                                                  obj/os_io_seproxyhal.o
+G_io_usb_hid_current_buffer                       obj/os.o
+G_io_usb_hid_remaining_length                     obj/os.o
+G_io_usb_hid_sequence_number                      obj/os.o
+G_io_usb_hid_total_length                         obj/os.o
+                                                  obj/usbd_hid_impl.o
+G_try_last_open_context                           obj/os.o
+                                                  obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+HID_ReportDesc                                    obj/usbd_hid_impl.o
+USBD_ClrClassConfig                               obj/usbd_core.o
+                                                  obj/usbd_ctlreq.o
+USBD_ClrFeature                                   obj/usbd_ctlreq.o
+USBD_CtlContinueRx                                obj/usbd_ioreq.o
+                                                  obj/usbd_core.o
+USBD_CtlContinueSendData                          obj/usbd_ioreq.o
+                                                  obj/usbd_core.o
+USBD_CtlError                                     obj/usbd_ctlreq.o
+                                                  obj/usbd_hid.o
+USBD_CtlPrepareRx                                 obj/usbd_ioreq.o
+USBD_CtlReceiveStatus                             obj/usbd_ioreq.o
+                                                  obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_CtlSendData                                  obj/usbd_ioreq.o
+                                                  obj/usbd_hid.o
+                                                  obj/usbd_ctlreq.o
+USBD_CtlSendStatus                                obj/usbd_ioreq.o
+                                                  obj/usbd_hid.o
+                                                  obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_DeInit                                       obj/usbd_core.o
+                                                  obj/usbd_hid_impl.o
+USBD_Device                                       obj/usbd_core.o
+                                                  obj/usbd_hid_impl.o
+                                                  obj/os_io_seproxyhal.o
+USBD_DeviceDesc                                   obj/usbd_hid_impl.o
+USBD_GetConfig                                    obj/usbd_ctlreq.o
+USBD_GetDescriptor                                obj/usbd_ctlreq.o
+USBD_GetLen                                       obj/usbd_ctlreq.o
+USBD_GetStatus                                    obj/usbd_ctlreq.o
+USBD_GetString                                    obj/usbd_ctlreq.o
+USBD_HID_DataOut_impl                             obj/usbd_hid_impl.o
+USBD_HID_DeInit                                   obj/usbd_hid.o
+                                                  obj/usbd_hid_impl.o
+USBD_HID_Desc                                     obj/usbd_hid_impl.o
+USBD_HID_GetHidDescriptor_impl                    obj/usbd_hid_impl.o
+                                                  obj/usbd_hid.o
+USBD_HID_GetReportDescriptor_impl                 obj/usbd_hid_impl.o
+                                                  obj/usbd_hid.o
+USBD_HID_Init                                     obj/usbd_hid.o
+                                                  obj/usbd_hid_impl.o
+USBD_HID_Setup                                    obj/usbd_hid.o
+                                                  obj/usbd_hid_impl.o
+USBD_Init                                         obj/usbd_core.o
+                                                  obj/usbd_hid_impl.o
+USBD_LL_ClearStallEP                              obj/usbd_conf.o
+                                                  obj/usbd_ctlreq.o
+USBD_LL_CloseEP                                   obj/usbd_conf.o
+                                                  obj/usbd_hid.o
+USBD_LL_DataInStage                               obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_DataOutStage                              obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_DeInit                                    obj/usbd_conf.o
+                                                  obj/usbd_core.o
+USBD_LL_DevConnected                              obj/usbd_core.o
+USBD_LL_DevDisconnected                           obj/usbd_core.o
+USBD_LL_FlushEP                                   obj/usbd_conf.o
+USBD_LL_Init                                      obj/usbd_conf.o
+                                                  obj/usbd_core.o
+USBD_LL_IsStallEP                                 obj/usbd_conf.o
+                                                  obj/usbd_ctlreq.o
+USBD_LL_IsoINIncomplete                           obj/usbd_core.o
+USBD_LL_IsoOUTIncomplete                          obj/usbd_core.o
+USBD_LL_OpenEP                                    obj/usbd_conf.o
+                                                  obj/usbd_hid.o
+USBD_LL_PrepareReceive                            obj/usbd_conf.o
+                                                  obj/usbd_ioreq.o
+                                                  obj/usbd_hid_impl.o
+                                                  obj/usbd_hid.o
+USBD_LL_Reset                                     obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_Resume                                    obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_SOF                                       obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_SetSpeed                                  obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_SetUSBAddress                             obj/usbd_conf.o
+                                                  obj/usbd_ctlreq.o
+USBD_LL_SetupStage                                obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_StallEP                                   obj/usbd_conf.o
+                                                  obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_LL_Start                                     obj/usbd_conf.o
+                                                  obj/usbd_core.o
+USBD_LL_Stop                                      obj/usbd_conf.o
+                                                  obj/usbd_core.o
+USBD_LL_Suspend                                   obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+USBD_LL_Transmit                                  obj/usbd_conf.o
+                                                  obj/usbd_ioreq.o
+USBD_PRODUCT_FS_STRING                            obj/usbd_hid_impl.o
+USBD_ParseSetupRequest                            obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_RegisterClass                                obj/usbd_core.o
+                                                  obj/usbd_hid_impl.o
+USBD_RunTestMode                                  obj/usbd_core.o
+USBD_SetAddress                                   obj/usbd_ctlreq.o
+USBD_SetClassConfig                               obj/usbd_core.o
+                                                  obj/usbd_ctlreq.o
+USBD_SetConfig                                    obj/usbd_ctlreq.o
+USBD_SetFeature                                   obj/usbd_ctlreq.o
+USBD_Start                                        obj/usbd_core.o
+                                                  obj/usbd_hid_impl.o
+USBD_StdDevReq                                    obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_StdEPReq                                     obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_StdItfReq                                    obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+USBD_Stop                                         obj/usbd_core.o
+USB_power                                         obj/usbd_hid_impl.o
+                                                  obj/main.o
+UX_MENU_END_ENTRY                                 obj/os_io_seproxyhal.o
+__aeabi_idiv0                                     /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+                                                  /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+__aeabi_ldiv0                                     /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_dvmd_tls.o)
+__aeabi_memclr                                    /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+                                                  obj/os.o
+__aeabi_memclr4                                   /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+                                                  obj/usbd_core.o
+__aeabi_memclr8                                   /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+__aeabi_memset                                    /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+                                                  /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memclr.o)
+                                                  obj/os_printf.o
+                                                  obj/os.o
+__aeabi_memset4                                   /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+__aeabi_memset8                                   /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+__aeabi_uidiv                                     /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+                                                  obj/os_printf.o
+                                                  obj/os_io_seproxyhal.o
+__aeabi_uidivmod                                  /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+                                                  obj/usbd_core.o
+                                                  obj/os_printf.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+__udivsi3                                         /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv6-m/libgcc.a(_udivsi3.o)
+_envram                                           obj/pic.o
+_nvram                                            obj/pic.o
+bagl_label_roundtrip_duration_ms                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+bagl_label_roundtrip_duration_ms_buf              obj/os_io_seproxyhal.o
+check_api_level                                   obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+cx_aes                                            obj/syscalls.o
+cx_aes_init_key                                   obj/syscalls.o
+cx_aes_iv                                         obj/syscalls.o
+cx_borromean_sign                                 obj/syscalls.o
+cx_borromean_verify                               obj/syscalls.o
+cx_crc16                                          obj/syscalls.o
+cx_crc16_update                                   obj/syscalls.o
+cx_des                                            obj/syscalls.o
+cx_des_init_key                                   obj/syscalls.o
+cx_des_iv                                         obj/syscalls.o
+cx_ecdh                                           obj/syscalls.o
+cx_ecdsa_sign                                     obj/syscalls.o
+cx_ecdsa_verify                                   obj/syscalls.o
+cx_ecfp_add_point                                 obj/syscalls.o
+cx_ecfp_generate_pair                             obj/syscalls.o
+                                                  obj/main.o
+cx_ecfp_init_private_key                          obj/syscalls.o
+                                                  obj/main.o
+cx_ecfp_init_public_key                           obj/syscalls.o
+cx_ecfp_is_valid_point                            obj/syscalls.o
+cx_ecfp_scalar_mult                               obj/syscalls.o
+cx_ecschnorr_sign                                 obj/syscalls.o
+cx_ecschnorr_verify                               obj/syscalls.o
+cx_eddsa_sign                                     obj/syscalls.o
+cx_eddsa_verify                                   obj/syscalls.o
+cx_edward_compress_point                          obj/syscalls.o
+cx_edward_decompress_point                        obj/syscalls.o
+cx_hash                                           obj/syscalls.o
+                                                  obj/main.o
+cx_hash_sha256                                    obj/syscalls.o
+cx_hash_sha512                                    obj/syscalls.o
+cx_hmac                                           obj/syscalls.o
+cx_hmac_ripemd160_init                            obj/syscalls.o
+cx_hmac_sha256                                    obj/syscalls.o
+cx_hmac_sha256_init                               obj/syscalls.o
+cx_hmac_sha512                                    obj/syscalls.o
+cx_hmac_sha512_init                               obj/syscalls.o
+cx_keccak_init                                    obj/syscalls.o
+cx_math_add                                       obj/syscalls.o
+cx_math_addm                                      obj/syscalls.o
+cx_math_cmp                                       obj/syscalls.o
+cx_math_invintm                                   obj/syscalls.o
+cx_math_invprimem                                 obj/syscalls.o
+cx_math_is_prime                                  obj/syscalls.o
+cx_math_is_zero                                   obj/syscalls.o
+cx_math_modm                                      obj/syscalls.o
+cx_math_mult                                      obj/syscalls.o
+cx_math_multm                                     obj/syscalls.o
+cx_math_next_prime                                obj/syscalls.o
+cx_math_powm                                      obj/syscalls.o
+cx_math_sub                                       obj/syscalls.o
+cx_math_subm                                      obj/syscalls.o
+cx_pbkdf2_sha512                                  obj/syscalls.o
+cx_ripemd160_init                                 obj/syscalls.o
+                                                  obj/main.o
+cx_rng                                            obj/syscalls.o
+                                                  obj/os.o
+cx_rng_u8                                         obj/syscalls.o
+cx_rsa_decrypt                                    obj/syscalls.o
+cx_rsa_encrypt                                    obj/syscalls.o
+cx_rsa_generate_pair                              obj/syscalls.o
+cx_rsa_init_private_key                           obj/syscalls.o
+cx_rsa_init_public_key                            obj/syscalls.o
+cx_rsa_sign                                       obj/syscalls.o
+cx_rsa_verify                                     obj/syscalls.o
+cx_sha224_init                                    obj/syscalls.o
+cx_sha256_init                                    obj/syscalls.o
+                                                  obj/main.o
+cx_sha384_init                                    obj/syscalls.o
+cx_sha3_init                                      obj/syscalls.o
+cx_sha3_xof_init                                  obj/syscalls.o
+cx_sha512_init                                    obj/syscalls.o
+ep_in_stall                                       obj/usbd_conf.o
+ep_out_stall                                      obj/usbd_conf.o
+io_event                                          obj/main.o
+                                                  obj/os_io_seproxyhal.o
+io_exchange                                       obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_exchange_al                                    obj/main.o
+                                                  obj/os_io_seproxyhal.o
+io_seproxyhal_backlight                           obj/os_io_seproxyhal.o
+io_seproxyhal_button_push                         obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_disable_io                          obj/os_io_seproxyhal.o
+io_seproxyhal_display                             obj/main.o
+                                                  obj/os_io_seproxyhal.o
+io_seproxyhal_display_bitmap                      obj/os_io_seproxyhal.o
+io_seproxyhal_display_default                     obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_display_icon                        obj/os_io_seproxyhal.o
+io_seproxyhal_general_status                      obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_get_ep_rx_size                      obj/os_io_seproxyhal.o
+                                                  obj/usbd_hid_impl.o
+io_seproxyhal_handle_bluenrg_event                obj/os_io_seproxyhal.o
+io_seproxyhal_handle_event                        obj/os_io_seproxyhal.o
+io_seproxyhal_handle_usb_ep_xfer_event            obj/os_io_seproxyhal.o
+io_seproxyhal_handle_usb_event                    obj/os_io_seproxyhal.o
+io_seproxyhal_init                                obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_init_button                         obj/os_io_seproxyhal.o
+io_seproxyhal_init_ux                             obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_power_off                           obj/os_io_seproxyhal.o
+io_seproxyhal_request_mcu_status                  obj/os_io_seproxyhal.o
+io_seproxyhal_se_reset                            obj/os_io_seproxyhal.o
+io_seproxyhal_setup_ticker                        obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_spi_is_status_sent                  obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_spi_recv                            obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_spi_send                            obj/syscalls.o
+                                                  obj/usbd_conf.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_touch                               obj/os_io_seproxyhal.o
+io_seproxyhal_touch_element_callback              obj/os_io_seproxyhal.o
+                                                  obj/main.o
+io_seproxyhal_touch_out                           obj/os_io_seproxyhal.o
+io_seproxyhal_touch_over                          obj/os_io_seproxyhal.o
+io_seproxyhal_touch_tap                           obj/os_io_seproxyhal.o
+io_usb_hid_exchange                               obj/os.o
+                                                  obj/os_io_seproxyhal.o
+io_usb_hid_init                                   obj/os.o
+                                                  obj/os_io_seproxyhal.o
+io_usb_hid_receive                                obj/os.o
+                                                  obj/usbd_hid_impl.o
+io_usb_send_apdu_data                             obj/os_io_seproxyhal.o
+                                                  obj/usbd_hid_impl.o
+io_usb_send_ep                                    obj/os_io_seproxyhal.o
+longjmp                                           /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+                                                  obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/os.o
+                                                  obj/main.o
+main                                              obj/main.o
+memset                                            /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-memset.o)
+                                                  /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-aeabi_memset.o)
+nvm_write                                         obj/syscalls.o
+os_boot                                           obj/os.o
+                                                  obj/main.o
+os_customca_verify                                obj/syscalls.o
+os_endorsement_get_code_hash                      obj/syscalls.o
+os_endorsement_get_public_key                     obj/syscalls.o
+os_endorsement_get_public_key_certificate         obj/syscalls.o
+os_endorsement_key1_get_app_secret                obj/syscalls.o
+os_endorsement_key1_sign_data                     obj/syscalls.o
+os_endorsement_key2_derive_sign_data              obj/syscalls.o
+os_flags                                          obj/syscalls.o
+os_get_memory_info                                obj/syscalls.o
+os_global_pin_check                               obj/syscalls.o
+os_global_pin_invalidate                          obj/syscalls.o
+                                                  obj/main.o
+os_global_pin_is_validated                        obj/syscalls.o
+                                                  obj/main.o
+os_global_pin_retries                             obj/syscalls.o
+os_longjmp                                        obj/os.o
+os_memcmp                                         obj/os.o
+                                                  obj/os_io_seproxyhal.o
+os_memmove                                        obj/os.o
+                                                  obj/os_printf.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+os_memset                                         obj/os.o
+                                                  obj/usbd_hid_impl.o
+                                                  obj/os_printf.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+os_perso_derive_and_set_seed                      obj/syscalls.o
+os_perso_derive_node_bip32                        obj/syscalls.o
+                                                  obj/main.o
+os_perso_erase_all                                obj/syscalls.o
+os_perso_finalize                                 obj/syscalls.o
+os_perso_get_devname                              obj/syscalls.o
+os_perso_isonboarded                              obj/syscalls.o
+os_perso_set_current_identity_pin                 obj/syscalls.o
+os_perso_set_devname                              obj/syscalls.o
+os_perso_set_pin                                  obj/syscalls.o
+os_perso_set_seed                                 obj/syscalls.o
+os_perso_set_words                                obj/syscalls.o
+os_perso_wipe                                     obj/syscalls.o
+os_registry_count                                 obj/syscalls.o
+os_registry_get                                   obj/syscalls.o
+os_sched_exec                                     obj/syscalls.o
+os_sched_exit                                     obj/syscalls.o
+                                                  obj/main.o
+os_seph_features                                  obj/syscalls.o
+os_seph_version                                   obj/syscalls.o
+os_setting_get                                    obj/syscalls.o
+os_setting_set                                    obj/syscalls.o
+os_ux                                             obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/main.o
+os_ux_blocking                                    obj/os_io_seproxyhal.o
+                                                  obj/main.o
+os_ux_register                                    obj/syscalls.o
+os_version                                        obj/syscalls.o
+os_xor                                            obj/os.o
+pic                                               obj/pic.o
+                                                  obj/usbd_ctlreq.o
+                                                  obj/usbd_core.o
+                                                  obj/os_io_seproxyhal.o
+pic_internal                                      obj/pic_internal.o
+                                                  obj/pic.o
+reset                                             obj/syscalls.o
+                                                  obj/os_io_seproxyhal.o
+                                                  obj/os.o
+                                                  obj/main.o
+screen_printc                                     obj/os_io_seproxyhal.o
+setjmp                                            /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-setjmp.o)
+                                                  obj/main.o
+snprintf                                          obj/os_printf.o
+strlen                                            /home/peter/Projects/iota-ledger-nano-s/sdk/gcc-arm-none-eabi-5_3-2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv6-m/libc.a(lib_a-strlen-stub.o)
+                                                  obj/os_io_seproxyhal.o
+ux                                                obj/main.o
+                                                  obj/os_io_seproxyhal.o
+ux_menu                                           obj/os_io_seproxyhal.o
+ux_menu_display                                   obj/os_io_seproxyhal.o
+ux_menu_element_preprocessor                      obj/os_io_seproxyhal.o
+ux_menu_elements                                  obj/os_io_seproxyhal.o
+ux_menu_elements_button                           obj/os_io_seproxyhal.o
+ux_menu_get_entry                                 obj/os_io_seproxyhal.o
+ux_turner                                         obj/os_io_seproxyhal.o
+ux_turner_display                                 obj/os_io_seproxyhal.o
+ux_turner_element_preprocessor                    obj/os_io_seproxyhal.o
+ux_turner_elements                                obj/os_io_seproxyhal.o
+ux_turner_elements_button                         obj/os_io_seproxyhal.o
+ux_turner_ticker                                  obj/os_io_seproxyhal.o
