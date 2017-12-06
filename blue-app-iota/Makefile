@@ -56,7 +56,7 @@ $(info GCCPATH is not set: arm-none-eabi-* will be used from PATH)
 endif
 
 CC := $(CLANGPATH)clang
-CFLAGS += -O3 -Os
+CFLAGS += -O3 -Os -I$(TOP_DIR)vendor
 
 AS := $(GCCPATH)arm-none-eabi-gcc
 AFLAGS +=

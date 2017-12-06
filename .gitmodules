@@ -1,0 +1,3 @@
+[submodule "blue-app-iota/vendor/-b"]
+	path = blue-app-iota/vendor/-b
+	url = git@github.com:iota-trezor/iota.git

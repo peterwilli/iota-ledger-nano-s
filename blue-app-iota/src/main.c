@@ -18,8 +18,13 @@
 #include "os.h"
 #include "cx.h"
 #include <stdbool.h>
-
 #include "os_io_seproxyhal.h"
+
+// iota-related stuff
+#include "iota/kerl.h"
+#include "iota/conversion.h"
+#include "iota/addresses.h"
+#include "iota/transaction.h"
 
 unsigned char G_io_seproxyhal_spi_buffer[IO_SEPROXYHAL_BUFFER_SIZE_B];
 
