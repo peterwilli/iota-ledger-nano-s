@@ -21,10 +21,10 @@
 #include "os_io_seproxyhal.h"
 
 // iota-related stuff
-#include "iota/kerl.h"
-#include "iota/conversion.h"
-#include "iota/addresses.h"
-#include "iota/transaction.h"
+#include "vendor/iota/kerl.h"
+#include "vendor/iota/conversion.h"
+#include "vendor/iota/addresses.h"
+#include "vendor/iota/transaction.h"
 
 unsigned char G_io_seproxyhal_spi_buffer[IO_SEPROXYHAL_BUFFER_SIZE_B];
 
@@ -510,8 +510,40 @@ static bool derive() {
     }
 
     os_perso_derive_node_bip32(CX_CURVE_256K1, path, 5, privateKeyData, NULL);
-    length = encode_base58(privateKeyData, sizeof(privateKeyData), address, sizeof(address));
-    address[length] = '\0';
+    kerl_initialize();
+    unsigned char bytes_in[48];
+
+    memcpy(&bytes_in[0], privateKeyData, 48);
+		kerl_absorb_bytes(bytes_in, 48);
+    memcpy(&bytes_in[0], privateKeyData, 48);
+    kerl_absorb_bytes(bytes_in, 48);
+    memcpy(&bytes_in[0], privateKeyData, 48);
+    kerl_absorb_bytes(bytes_in, 48);
+    memcpy(&bytes_in[0], privateKeyData, 48);
+    kerl_absorb_bytes(bytes_in, 48);
+
+		// Step 2.
+		// memcpy(&bytes_in[0], trezor_seed+16, 48);
+		// kerl_absorb_bytes(bytes_in, 48);
+    //
+		// // Step 3.
+		// memcpy(&bytes_in[0], trezor_seed+32, 32);
+		// memcpy(&bytes_in[32], trezor_seed, 16);
+		// kerl_absorb_bytes(bytes_in, 48);
+    //
+		// // Step 4.
+		// memcpy(&bytes_in[0], trezor_seed+48, 16);
+		// memcpy(&bytes_in[16], trezor_seed, 32);
+		// kerl_absorb_bytes(bytes_in, 48);
+
+		// Squeeze out the seed
+		trit_t seed_trits[243];
+		kerl_squeeze_trits(seed_trits, 243);
+		tryte_t seed_trytes[81];
+		trits_to_trytes(seed_trits, seed_trytes, 243);
+		trytes_to_chars(seed_trytes, address, 81);
+
+    address[82] = '\0';
     return true;
 }
 

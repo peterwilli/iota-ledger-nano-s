@@ -1,11 +1,3 @@
-#ifndef UNITTESTING
-#include "../gettext.h"
-#include "../layout2.h"
-#else
-// some stuff to mock trezor graphical functions
-#define _(X) (X)
-void layoutProgress(const char* descr, int prog){ while(0) {} }
-#endif
 #include "addresses.h"
 #include "kerl.h"
 
@@ -23,7 +15,7 @@ int add_index_to_seed(trit_t trits[], uint32_t index)
             } else {
                 carry = false;
             }
-            if (carry) {
+              if (carry) {
                 offset++;
             }
         }
@@ -66,7 +58,7 @@ int generate_public_address(const trit_t private_key[], trit_t address_out[])
 
         for (uint8_t j = 0; j < 27; j++) {
 			int progress = ((i*27 + j)*18519)/1000;
-			layoutProgress(_("Generating address."), progress);
+			//layoutProgress(_("Generating address."), progress);
             for (uint8_t k = 0; k < 26; k++) {
                 kerl_initialize();
                 kerl_absorb_trits(&key_fragment[j*243], 243);
@@ -78,7 +70,7 @@ int generate_public_address(const trit_t private_key[], trit_t address_out[])
         kerl_absorb_trits(key_fragment, 243*27);
         kerl_squeeze_trits(&digests[i*243], 243);
     }
-	layoutProgress(_("Generating address."), 1000);
+	//layoutProgress(_("Generating address."), 1000);
 
     // Get address
     kerl_initialize();
