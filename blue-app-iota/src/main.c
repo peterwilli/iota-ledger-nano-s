@@ -560,11 +560,6 @@ __attribute__((section(".boot"))) int main(void) {
         TRY {
             io_seproxyhal_init();
 
-            // Invalidate the current authentication to demonstrate
-            // reauthentication
-            // Reauthenticate with "Auth" (Blue) or left button (Nano S)
-            os_global_pin_invalidate();
-
 #ifdef LISTEN_BLE
             if (os_seph_features() &
                 SEPROXYHAL_TAG_SESSION_START_EVENT_FEATURE_BLE) {

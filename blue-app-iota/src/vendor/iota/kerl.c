@@ -1,6 +1,6 @@
 #include "kerl.h"
 #include "conversion.h"
-#include "vendor/trezor-crypto/sha3.h"
+#include "../trezor-crypto/sha3.h"
 #include <stdio.h>
 
 // Keccak 384 object
