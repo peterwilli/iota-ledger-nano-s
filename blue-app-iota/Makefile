@@ -22,8 +22,9 @@ include $(BOLOS_SDK)/Makefile.defines
 
 # Main app configuration
 
-APPNAME = "Hello Perso"
-APPVERSION = 1.0.0
+ICONNAME=icon.gif
+APPNAME = "IOTA"
+APPVERSION = 0.0.1
 APP_LOAD_PARAMS = --appFlags 0x40 $(COMMON_LOAD_PARAMS)
 
 # Build configuration
