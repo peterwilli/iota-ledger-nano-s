@@ -1,20 +1,21 @@
 #include "kerl.h"
 #include "conversion.h"
-#include "../trezor-crypto/sha3.h"
-#include <stdio.h>
+#include "os.h"
+#include "cx.h"
 
-// Keccak 384 object
-SHA3_CTX ctx;
+cx_sha3_t sha3;
+static unsigned char bytes_out[48] = {0};
 
 int kerl_initialize(void)
 {
-    keccak_384_Init(&ctx);
+
+    cx_keccak_init(&sha3, 384);
     return 0;
 }
 
-int kerl_absorb_bytes(const unsigned char bytes_in[], uint16_t len)
+int kerl_absorb_bytes(unsigned char *bytes_in, uint16_t len)
 {
-    keccak_Update(&ctx, bytes_in, len);
+    cx_hash((cx_hash_t *)&sha3, CX_LAST, bytes_in, len, bytes_out);
     return 0;
 }
 
@@ -30,7 +31,7 @@ int kerl_absorb_trits(const trit_t trits_in[], uint16_t len)
         unsigned char bytes[48];
         trits_to_words(trits, words);
         words_to_bytes(words, bytes, 12);
-        keccak_Update(&ctx, bytes, 48);
+        kerl_absorb_bytes(bytes, 48);
     }
     return 0;
 }
@@ -38,8 +39,6 @@ int kerl_absorb_trits(const trit_t trits_in[], uint16_t len)
 int kerl_squeeze_trits(trit_t trits_out[], uint16_t len)
 {
     (void) len;
-    unsigned char bytes_out[48] = {0};
-    keccak_Final(&ctx, bytes_out);
 
     // Convert to trits
     int32_t words[12];
@@ -49,13 +48,15 @@ int kerl_squeeze_trits(trit_t trits_out[], uint16_t len)
     // Last trit zero
     trits_out[242] = 0;
 
+    // TODO: Check if the following is needed. Seems to do nothing.
+
     // Flip bytes
     for (uint8_t i = 0; i < 48; i++) {
         bytes_out[i] = bytes_out[i] ^ 0xFF;
     }
 
-    keccak_384_Init(&ctx);
-    keccak_Update(&ctx, bytes_out, 48);
+    kerl_initialize();
+    kerl_absorb_bytes(bytes_out,48);
 
     return 0;
 }
