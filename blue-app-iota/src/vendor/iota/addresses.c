@@ -25,25 +25,22 @@ int add_index_to_seed(trit_t trits[], uint32_t index)
 
 int generate_private_key(const trit_t seed_trits[], const uint32_t index, trit_t private_key[])
 {
-    trit_t tmp[243];
-    memcpy(tmp, seed_trits, 243);
-
     // Add index
-    add_index_to_seed(tmp, index);
+    //add_index_to_seed(seed_trits, index);
 
-    kerl_initialize();
-    kerl_absorb_trits(tmp, 243);
-    kerl_squeeze_trits(tmp, 243);
-
-    kerl_initialize();
-    kerl_absorb_trits(tmp, 243);
-
-    int8_t level = 2;
-    for (uint8_t i = 0; i < level; i++) {
-        for (uint8_t j = 0; j < 27; j++) {
-            kerl_squeeze_trits(&private_key[i*243*27+j*243], 243);
-        }
-    }
+    // kerl_initialize();
+    // kerl_absorb_trits(seed_trits, 243);
+    // kerl_squeeze_trits(seed_trits, 243);
+    //
+    // kerl_initialize();
+    // kerl_absorb_trits(seed_trits, 243);
+    //
+    // int8_t level = 2;
+    // for (uint8_t i = 0; i < level; i++) {
+    //     for (uint8_t j = 0; j < 27; j++) {
+    //         kerl_squeeze_trits(&private_key[i*243*27+j*243], 243);
+    //     }
+    // }
     return 0;
 }
 

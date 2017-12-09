@@ -62,7 +62,7 @@ CFLAGS += -O3 -Os -I$(TOP_DIR)vendor
 AS := $(GCCPATH)arm-none-eabi-gcc
 AFLAGS +=
 
-LD := $(GCCPATH)arm-none-eabi-gcc
+LD := $(GCCPATH)arm-none-eabi-gcc -specs=nosys.specs
 LDFLAGS += -O3 -Os
 LDLIBS += -lm -lgcc -lc
 

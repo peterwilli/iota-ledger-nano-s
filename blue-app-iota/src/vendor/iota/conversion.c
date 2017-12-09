@@ -84,7 +84,7 @@ int trits_to_words(const trit_t trits_in[], int32_t words_out[])
             int32_t carry = 0;
 
             for (int32_t j = 0; j < sz; j++) {
-                int64_t v = ((int64_t)base[j]&0xFFFFFFFF) * ((int64_t)3) + ((int64_t)carry&0xFFFFFFFF);
+                int64_t v = ((int64_t)base[j]&0xFFFFFFFF);// * ((int64_t)3) + ((int64_t)carry&0xFFFFFFFF);
                 carry = (int32_t)((v >> 32) & 0xFFFFFFFF);
                 //printf("[%i]carry: %u\n", i, carry);
                 base[j] = (int32_t) (v & 0xFFFFFFFF);

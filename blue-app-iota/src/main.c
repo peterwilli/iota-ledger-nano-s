@@ -34,7 +34,7 @@ static const bagl_element_t *io_seproxyhal_touch_auth(const bagl_element_t *e);
 static bool derive(void);
 static void ui_idle(void);
 
-static char address[100];
+static char address[81];
 static unsigned int path[5];
 ux_state_t ux;
 
@@ -443,56 +443,6 @@ unsigned char io_event(unsigned char channel) {
     return 1;
 }
 
-static const char BASE58ALPHABET[] = {
-    '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F',
-    'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
-    'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm',
-    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-
-static unsigned int encode_base58(const void *in, unsigned int length,
-                                  char *out, unsigned int maxoutlen) {
-    char tmp[164];
-    char buffer[164];
-    unsigned char j;
-    unsigned char startAt;
-    unsigned char zeroCount = 0;
-    if (length > sizeof(tmp)) {
-        THROW(INVALID_PARAMETER);
-    }
-    os_memmove(tmp, in, length);
-    while ((zeroCount < length) && (tmp[zeroCount] == 0)) {
-        ++zeroCount;
-    }
-    j = 2 * length;
-    startAt = zeroCount;
-    while (startAt < length) {
-        unsigned short remainder = 0;
-        unsigned char divLoop;
-        for (divLoop = startAt; divLoop < length; divLoop++) {
-            unsigned short digit256 = (unsigned short)(tmp[divLoop] & 0xff);
-            unsigned short tmpDiv = remainder * 256 + digit256;
-            tmp[divLoop] = (unsigned char)(tmpDiv / 58);
-            remainder = (tmpDiv % 58);
-        }
-        if (tmp[startAt] == 0) {
-            ++startAt;
-        }
-        buffer[--j] = BASE58ALPHABET[remainder];
-    }
-    while ((j < (2 * length)) && (buffer[j] == BASE58ALPHABET[0])) {
-        ++j;
-    }
-    while (zeroCount-- > 0) {
-        buffer[--j] = BASE58ALPHABET[0];
-    }
-    length = 2 * length - j;
-    if (maxoutlen < length) {
-        THROW(EXCEPTION_OVERFLOW);
-    }
-    os_memmove(out, (buffer + j), length);
-    return length;
-}
-
 static bool derive() {
     cx_ecfp_private_key_t privateKey;
     cx_ecfp_public_key_t publicKey;
@@ -539,11 +489,18 @@ static bool derive() {
 		// Squeeze out the seed
 		trit_t seed_trits[243];
 		kerl_squeeze_trits(seed_trits, 243);
-		tryte_t seed_trytes[81];
-		trits_to_trytes(seed_trits, seed_trytes, 243);
-		trytes_to_chars(seed_trytes, address, 81);
 
-    address[82] = '\0';
+    {
+  		trit_t private_key_trits[243*27*2];
+  		generate_private_key(seed_trits, 1, private_key_trits);
+  		// trit_t public_address_trits[243];
+  		// generate_public_address(private_key_trits, public_address_trits);
+      //
+      // tryte_t pubkey_addr[81];
+  		// trits_to_trytes(public_address_trits, pubkey_addr, 243);
+  		// trytes_to_chars(pubkey_addr, address, 81);
+      address[82] = '\0';
+  	}
     return true;
 }
 
