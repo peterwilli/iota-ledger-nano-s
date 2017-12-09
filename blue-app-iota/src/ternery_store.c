@@ -5,29 +5,48 @@
 #include <stdbool.h>
 #include <math.h>
 
-void ternery_store_set_trit(int index, trit_t trit, uint8_t out[], int trits_length)
+int8_t ternery_store_get_trit(int index, uint8_t in[]) {
+  int arrayIndex = ceil(index / 8);
+
+  for(trit_t trit = -1; trit <= 1; trit++) {
+    uint8_t bit = pow(2, ((index * 3) + (1 + trit)) % 8);
+    if((in[arrayIndex] & bit) != 0) {
+      return trit;
+    }
+  }
+
+  return -2;
+}
+
+void ternery_store_set_trit(int index, trit_t trit, uint8_t out[])
 {
   // Max 8 values per uint8_t
-  int arrayIndex = ceil(index / 8);
-  uint8_t bit = pow((index * 3) % 8, 2);
-  out[arrayIndex] += bit;
-  // 1
-  // 1:0
-  // 1:-1
-  // 1:1
-  // 2:0
-  // 2:-1
-  // 2:1
-  // 3:0
-  // 3:-1
+  double oneBitPos = 0.125f;
+  double slice = ((index * 3.0f) / 8.0f);
+  double start = slice;
+  double end   = start + (oneBitPos * 3);
+  printf("range: %f - %f\n\n", start, end);
 
-  // 2
-  // 3:1
-  // 4:1
-  // 4:0
-  // 4:-1
-  // 5:1
-  // 5:0
-  // 5:-1
-  // 6:1
+  uint8_t bits = pow(2, ((index * 3) + (1 + trit)) % 8);
+
+  // First, set the remainder of the previous array (if any)
+  if(floor(end) > floor(start)) {
+    int spaceLeft = (ceilf(start) - start) * 8;
+    printf("spaceLeft: %d\n", spaceLeft);
+    int arrayIndex = floor(start);
+    int bitsSet = 0;
+    for(int i = 0; i < spaceLeft; i++) {
+      int bit = (bits >> i) & 1U;
+      int currentBit = (8 - spaceLeft) + i;
+      printf("currentBit: %d\n", currentBit);
+      out[arrayIndex] ^= (-bit ^ out[arrayIndex]) & (1UL << (currentBit));
+    }
+    bitsSet += spaceLeft
+  }
+
+  // out[arrayIndex] += bits;
+}
+
+int ternery_store_calculate_array_length(double amountOfTrits) {
+  return ceil((amountOfTrits * 3.0f) / 8.0f);
 }
