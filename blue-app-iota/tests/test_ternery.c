@@ -7,23 +7,11 @@ trit_t randomTrit() {
   return (trit_t) ((rand() % 3) - 1);
 }
 
-void testSingleTrit() {
-  printf("Testing a single-int trit\n");
-  uint8_t trits[1];
-  printf("Setting index 0 to 1 and index 1 to -1...\n");
-  ternery_store_set_trit(0, 1, trits);
-  ternery_store_set_trit(1, -1, trits);
-  int8_t trit = ternery_store_get_trit(0, trits);
-  printf("trit at index 0: %d\n", trit);
-  trit = ternery_store_get_trit(1, trits);
-  printf("trit at index 1: %d\n", trit);
-
-}
-
-void testLargeTrit(int amount) {
+void testTrits(int amount) {
   int arrayLen = ternery_store_calculate_array_length(amount);
   trit_t randomTrits[amount];
-  printf("Testing a larger trit amount. We need to store %d uint8_t's in a array for %d trits....\n", arrayLen, amount);
+
+  printf("Testing storing %d trits. We need to store %d uint8_t's in a array...\n", amount, arrayLen);
   printf("Filling random trits...\n");
   for(int i = 0; i < amount; i++) {
     randomTrits[i] = randomTrit();
@@ -32,6 +20,7 @@ void testLargeTrit(int amount) {
 
   printf("Inserting the trits into store\n");
   uint8_t trits[arrayLen];
+  memset(trits, 0, sizeof trits);
   for(int i = 0; i < amount; i++) {
     ternery_store_set_trit(i, randomTrits[i], trits);
   }
@@ -47,7 +36,7 @@ int main() {
   int seed = 3;
   srand(seed);
 
-  testSingleTrit();
-  testLargeTrit(6);
+  testTrits(2);
+  testTrits(4);
   return 0;
 }
