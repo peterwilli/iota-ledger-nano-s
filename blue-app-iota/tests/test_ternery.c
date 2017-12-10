@@ -24,7 +24,6 @@ void testTrits(int amount) {
   for(int i = 0; i < amount; i++) {
     ternery_store_set_trit(i, randomTrits[i], trits);
   }
-  return;
   printf("Compare the results with our random values...\n");
   for(int i = 0; i < amount; i++) {
     int8_t trit = ternery_store_get_trit(i, trits);
@@ -42,6 +41,6 @@ int main() {
   srand(seed);
 
   //testTrits(2);
-  testTrits(4);
+  testTrits(100);
   return 0;
 }
