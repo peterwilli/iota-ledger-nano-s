@@ -19,7 +19,7 @@ void ternery_store_get_range(int index, double out[]) {
 
 int8_t test_bits_for_trit(int index, uint8_t bitsIn) {
   for(trit_t trit = -1; trit <= 1; trit++) {
-    uint8_t bits = pow(2, ((index * 3) + (1 + trit)) % 8);
+    uint8_t bits = pow(2, ((index * 3) + (1 + trit)) % 6);
 
     if((bitsIn & bits) != 0) {
       return trit;
@@ -36,14 +36,18 @@ int8_t ternery_store_get_trit(int index, uint8_t in[]) {
     int spaceLeft = (ceilf(range[RANGE_START]) - range[RANGE_START]) * 8;
     printf("get spaceLeft: %d\n", spaceLeft);
     int arrayIndex = floor(range[RANGE_START]);
+
     uint8_t out_bit = 0;
 
+    int currentBit = 0;
     for(int i = 8 - spaceLeft; i < 8; i++) {
       int bit = (in[arrayIndex] >> i) & 1U;
-      printf("get bit %d: %d\n", i, bit);
+      printf("get bit %d: %d \n", i, bit);
+      printf("set bit %d at index %d \n", bit, currentBit);
       if(bit == 1) {
-        out_bit |= 1UL << i;
+        out_bit |= 1UL << currentBit;
       }
+      currentBit++;
     }
 
     for(int i = 0; i < 8 - spaceLeft; i++) {
@@ -52,7 +56,7 @@ int8_t ternery_store_get_trit(int index, uint8_t in[]) {
 
       // We now have shifted arrays, so array index + 1
       if(bit == 1) {
-        out_bit |= 1UL << i;
+        out_bit |= 1UL << currentBit++;
       }
     }
     printf("out_bit: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(out_bit));
@@ -71,8 +75,15 @@ void ternery_store_set_trit(int index, trit_t trit, uint8_t out[])
   double range[2];
   ternery_store_get_range(index, range);
 
-  uint8_t bits = pow(2, ((index * 3) + (1 + trit)) % 8);
-  printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
+  // for(int i =0 ; i < 10; i++) {
+  //   trit_t t2rit = 1;
+  //   int idx = ((i * 3) + (1 + t2rit)) % 6;
+  //   uint8_t bits = pow(2, idx);
+  //   printf("index: %d\n", 1+idx);
+  // }
+
+  uint8_t bits = pow(2, ((index * 3) + (1 + trit)) % 6);
+  printf("bits to set: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   printf("\n");
 
   // First, set the remainder of the previous array (if any)
@@ -82,17 +93,15 @@ void ternery_store_set_trit(int index, trit_t trit, uint8_t out[])
     int arrayIndex = floor(range[RANGE_START]);
     int bitsSet = 0;
 
-    printf("out before: %d\n", out[arrayIndex]);
     for(int i = 0; i < spaceLeft; i++) {
       int bit = (bits >> i) & 1U;
       printf("spaceFill bit %d: %d\n", i, bit);
       int currentBit = (8 - spaceLeft) + i;
-      //printf("currentBit: %d\n", currentBit);
+      printf("currentBit: %d\n", currentBit);
       if(bit == 1) {
         out[arrayIndex] |= 1UL << currentBit;
       }
     }
-    printf("out: %d\n", out[arrayIndex]);
 
     bitsSet += spaceLeft;
 
@@ -111,7 +120,6 @@ void ternery_store_set_trit(int index, trit_t trit, uint8_t out[])
     printf("Setting directly\n");
     out[(int) floor(range[RANGE_START])] += bits;
   }
-
 }
 
 int ternery_store_calculate_array_length(double amountOfTrits) {
