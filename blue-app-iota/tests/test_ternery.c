@@ -37,10 +37,10 @@ void testTrits(int amount) {
 }
 
 int main() {
-  int seed = 5;
+  int seed = 2;
   srand(seed);
 
   //testTrits(2);
-  testTrits(100);
+  testTrits(10000);
   return 0;
 }

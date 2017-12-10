@@ -8,9 +8,9 @@
 #define RANGE_START 0
 #define RANGE_END 1
 
-void ternery_store_get_position(uint16_t index, uint8_t out[]) {
-  out[0] = floor(((index * 2) / 8.0f));
-  out[1] = (index % 4) * 2;
+void ternery_store_get_position(uint16_t index, uint16_t *arrayIndex, uint8_t *pos) {
+  *arrayIndex = floor(((index * 2) / 8.0f));
+  *pos = (index % 4) * 2;
   //printf("position: %dx%d\n", out[0], out[1]);
 }
 
@@ -43,37 +43,39 @@ uint8_t ternery_store_trit_to_bit(trit_t trit) {
   return ret;
 }
 
-int8_t ternery_store_get_trit(int index, uint8_t in[]) {
-  uint8_t position[2];
-  ternery_store_get_position(index, position);
+int8_t ternery_store_get_trit(uint16_t index, uint8_t in[]) {
+  uint16_t arrayIndex;
+  uint8_t pos;
+  ternery_store_get_position(index, &arrayIndex, &pos);
 
-  uint8_t bits = in[position[0]];
+  uint8_t bits = in[arrayIndex];
   //printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   //printf("\n");
 
   // clean out any crust from other indexes
-  bits = bits << 6 - (position[1] * 1);
+  bits = bits << 6 - pos;
   bits = bits >> 6;
   //printf("bits after cleaning: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   //printf("\n");
   return ternery_store_bit_to_trit(bits);
 }
 
-void ternery_store_set_trit(int index, trit_t trit, uint8_t out[])
+void ternery_store_set_trit(uint16_t index, trit_t trit, uint8_t out[])
 {
-  uint8_t position[2];
-  ternery_store_get_position(index, position);
+  uint16_t arrayIndex;
+  uint8_t pos;
+  ternery_store_get_position(index, &arrayIndex, &pos);
 
   uint8_t bits = ternery_store_trit_to_bit(trit);
   //printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   //printf("\n");
-  bits = bits << position[1];
+  bits = bits << pos;
   //printf("aligned bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   //printf("\n");
 
-  out[position[0]] += bits;
+  out[arrayIndex] += bits;
 }
 
-int ternery_store_calculate_array_length(double amountOfTrits) {
+int ternery_store_calculate_array_length(uint16_t amountOfTrits) {
   return ceil(amountOfTrits / 4);
 }
