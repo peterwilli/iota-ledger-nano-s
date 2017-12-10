@@ -9,7 +9,7 @@
 #define RANGE_END 1
 
 void ternery_store_get_position(uint16_t index, uint16_t *arrayIndex, uint8_t *pos) {
-  *arrayIndex = floor(((index * 2) / 8.0f));
+  *arrayIndex = (index * 2) / 8;
   *pos = (index % 4) * 2;
   //printf("position: %dx%d\n", out[0], out[1]);
 }
