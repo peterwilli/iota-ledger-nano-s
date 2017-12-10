@@ -1,4 +1,4 @@
-#include "ternery_store.h"
+#include "ternary_store.h"
 
 #include <string.h>
 #include <stdint.h>
@@ -8,27 +8,27 @@
 #define RANGE_START 0
 #define RANGE_END 1
 
-void ternery_store_get_position(uint16_t index, uint16_t *arrayIndex, uint8_t *pos) {
+void ternary_store_get_position(uint16_t index, uint16_t *arrayIndex, uint8_t *pos) {
   *arrayIndex = (index * 2) / 8;
   *pos = (index % 4) * 2;
   //printf("position: %dx%d\n", out[0], out[1]);
 }
 
-trit_t ternery_store_bit_to_trit(uint8_t bit) {
-  if(ternery_store_trit_to_bit(-1) == bit) {
+trit_t ternary_store_bit_to_trit(uint8_t bit) {
+  if(ternary_store_trit_to_bit(-1) == bit) {
     return -1;
   }
-  else if(ternery_store_trit_to_bit(0) == bit) {
+  else if(ternary_store_trit_to_bit(0) == bit) {
     return 0;
   }
-  else if(ternery_store_trit_to_bit(1) == bit) {
+  else if(ternary_store_trit_to_bit(1) == bit) {
     return 1;
   }
 
   return -2;
 }
 
-uint8_t ternery_store_trit_to_bit(trit_t trit) {
+uint8_t ternary_store_trit_to_bit(trit_t trit) {
   uint8_t ret = 0;
   if(trit == -1) {
     ret = 0 | 1UL << 0;
@@ -43,10 +43,10 @@ uint8_t ternery_store_trit_to_bit(trit_t trit) {
   return ret;
 }
 
-int8_t ternery_store_get_trit(uint16_t index, uint8_t in[]) {
+int8_t ternary_store_get_trit(uint16_t index, uint8_t in[]) {
   uint16_t arrayIndex;
   uint8_t pos;
-  ternery_store_get_position(index, &arrayIndex, &pos);
+  ternary_store_get_position(index, &arrayIndex, &pos);
 
   uint8_t bits = in[arrayIndex];
   //printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
@@ -57,16 +57,16 @@ int8_t ternery_store_get_trit(uint16_t index, uint8_t in[]) {
   bits = bits >> 6;
   //printf("bits after cleaning: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   //printf("\n");
-  return ternery_store_bit_to_trit(bits);
+  return ternary_store_bit_to_trit(bits);
 }
 
-void ternery_store_set_trit(uint16_t index, trit_t trit, uint8_t out[])
+void ternary_store_set_trit(uint16_t index, trit_t trit, uint8_t out[])
 {
   uint16_t arrayIndex;
   uint8_t pos;
-  ternery_store_get_position(index, &arrayIndex, &pos);
+  ternary_store_get_position(index, &arrayIndex, &pos);
 
-  uint8_t bits = ternery_store_trit_to_bit(trit);
+  uint8_t bits = ternary_store_trit_to_bit(trit);
   //printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   //printf("\n");
   bits = bits << pos;
@@ -76,6 +76,6 @@ void ternery_store_set_trit(uint16_t index, trit_t trit, uint8_t out[])
   out[arrayIndex] += bits;
 }
 
-int ternery_store_calculate_array_length(uint16_t amountOfTrits) {
+int ternary_store_calculate_array_length(uint16_t amountOfTrits) {
   return ceil(amountOfTrits / 4);
 }

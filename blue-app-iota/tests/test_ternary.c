@@ -1,4 +1,4 @@
-#include "test_ternery.h"
+#include "test_ternary.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@ trit_t randomTrit() {
 }
 
 void testTrits(int amount) {
-  int arrayLen = ternery_store_calculate_array_length(amount);
+  int arrayLen = ternary_store_calculate_array_length(amount);
   trit_t randomTrits[amount];
 
   printf("Testing storing %d trits. We need to store %d uint8_t's in a array...\n", amount, arrayLen);
@@ -22,11 +22,11 @@ void testTrits(int amount) {
   uint8_t trits[arrayLen];
   memset(trits, 0, sizeof trits);
   for(int i = 0; i < amount; i++) {
-    ternery_store_set_trit(i, randomTrits[i], trits);
+    ternary_store_set_trit(i, randomTrits[i], trits);
   }
   printf("Compare the results with our random values...\n");
   for(int i = 0; i < amount; i++) {
-    int8_t trit = ternery_store_get_trit(i, trits);
+    int8_t trit = ternary_store_get_trit(i, trits);
     printf("Trit %d: %d (real trit: %d)\n", i, trit, randomTrits[i]);
   }
 
