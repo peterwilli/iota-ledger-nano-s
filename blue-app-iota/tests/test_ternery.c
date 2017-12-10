@@ -38,20 +38,10 @@ void testTrits(int amount) {
 }
 
 int main() {
-  // uint8_t number = 8 + 16;
-  // printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(number));
-  // printf("\n");
-  // int bit = (number >> 3) & 1U;
-  // printf("bit: %d\n", bit);
-  // number ^= (-0 ^ number) & (1UL << 3);
-  // printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(number));
-  // printf("\n");
-  // return 0;
-
-  int seed = 4;
+  int seed = 5;
   srand(seed);
 
   //testTrits(2);
-  testTrits(3);
+  testTrits(4);
   return 0;
 }
