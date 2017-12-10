@@ -67,7 +67,11 @@ int8_t ternery_store_get_trit(int index, uint8_t in[]) {
     return test_bits_for_trit(index, out_bit);
   } else {
     int arrayIndex = ceil(index / 8);
-    return test_bits_for_trit(index, in[arrayIndex]);
+    double prevRange[2];
+    ternery_store_get_range(index - 1, prevRange);
+    int spaceLeft = (ceilf(prevRange[RANGE_START]) - prevRange[RANGE_START]) * 8;
+
+    return test_bits_for_trit(index, in[arrayIndex] >> (3 - spaceLeft));
   }
 
   return -2;
@@ -89,53 +93,86 @@ void ternery_store_set_trit(int index, trit_t trit, uint8_t out[])
   printf("bits to set: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
   printf("\n");
 
+  int arrayIndex = floor(range[RANGE_START]);
+  int spaceLeft = (ceilf(range[RANGE_START]) - range[RANGE_START]) * 8;
+  printf("spaceLeft: %d\n", spaceLeft);
+  uint8_t fillerBits = 0;
+
   // First, set the remainder of the previous array (if any)
   if(floor(range[RANGE_END]) > floor(range[RANGE_START])) {
-    int spaceLeft = (ceilf(range[RANGE_START]) - range[RANGE_START]) * 8;
-    printf("spaceLeft: %d\n", spaceLeft);
-    int arrayIndex = floor(range[RANGE_START]);
-    int bitsSet = 0;
+    fillerBits = bits << (8 - spaceLeft);
+    printf("fillerBits:         " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(fillerBits));
+    printf("\n");
+    out[arrayIndex] += fillerBits;
 
-    for(int i = 0; i < spaceLeft; i++) {
-      int bit = (bits >> i) & 1U;
-      printf("spaceFill bit %d: %d\n", i, bit);
-      int currentBit = (8 - spaceLeft) + i;
-      printf("currentBit: %d\n", currentBit);
-      if(bit == 1) {
-        out[arrayIndex] |= 1UL << currentBit;
-      }
-    }
-
-    bitsSet += spaceLeft;
-
-    for(int i = bitsSet; i < 8; i++) {
-      int bit = (bits >> i) & 1U;
-      int currentBit = (i - bitsSet);
-      //printf("newFill bit   %d: %d (actual place in array %d is %d)\n", i, bit, arrayIndex + 1, currentBit);
-
-      // We now have shifted arrays, so array index + 1
-      if(bit == 1) {
-        out[arrayIndex + 1] |= 1UL << currentBit;
-      }
-    }
+    fillerBits = bits >> spaceLeft;
+    printf("fillerBits overlap: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(fillerBits));
+    printf("\n");
+    out[arrayIndex + 1] += fillerBits;
   }
   else {
-    if(index > 0) {
-      double prevRange[2];
-      ternery_store_get_range(index - 1, prevRange);
-      int spaceLeft = (ceilf(prevRange[RANGE_START]) - prevRange[RANGE_START]) * 8;
-      printf("shift spaceLeft: %d\n", spaceLeft);
-      printf("bits before shift: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
-      printf("\n");
-      bits = bits << spaceLeft;
-      printf("bits after shift:  " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
-      printf("\n");
-
+    if((8 - spaceLeft) > 0) {
+      fillerBits = (bits << (8 - spaceLeft));
+    }
+    else {
+      fillerBits = bits;
     }
 
-    printf("Setting directly in array index %d\n", (int) floor(range[RANGE_START]));
-    out[(int) floor(range[RANGE_START])] += bits;
+    printf("fillerBits (full): " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(fillerBits));
+    printf("\n");
+
+    out[arrayIndex] += fillerBits;
   }
+  //
+  // // First, set the remainder of the previous array (if any)
+  // if(floor(range[RANGE_END]) > floor(range[RANGE_START])) {
+  //   int spaceLeft = (ceilf(range[RANGE_START]) - range[RANGE_START]) * 8;
+  //   printf("spaceLeft: %d\n", spaceLeft);
+  //   int arrayIndex = floor(range[RANGE_START]);
+  //   int bitsSet = 0;
+  //
+  //   for(int i = 0; i < spaceLeft; i++) {
+  //     int bit = (bits >> i) & 1U;
+  //     printf("spaceFill bit %d: %d\n", i, bit);
+  //     int currentBit = (8 - spaceLeft) + i;
+  //     printf("currentBit: %d\n", currentBit);
+  //     if(bit == 1) {
+  //       out[arrayIndex] |= 1UL << currentBit;
+  //     }
+  //   }
+  //
+  //   bitsSet += spaceLeft;
+  //
+  //   for(int i = bitsSet; i < 8; i++) {
+  //     int bit = (bits >> i) & 1U;
+  //     int currentBit = (i - bitsSet);
+  //     //printf("newFill bit   %d: %d (actual place in array %d is %d)\n", i, bit, arrayIndex + 1, currentBit);
+  //
+  //     // We now have shifted arrays, so array index + 1
+  //     if(bit == 1) {
+  //       out[arrayIndex + 1] |= 1UL << currentBit;
+  //     }
+  //   }
+  // }
+  // else {
+  //   printf("Setting directly in array index %d\n", (int) floor(range[RANGE_START]));
+  //   if(index > 0) {
+  //     double prevRange[2];
+  //     ternery_store_get_range(index - 1, prevRange);
+  //     int spaceLeft = (ceilf(prevRange[RANGE_START]) - prevRange[RANGE_START]) * 8;
+  //     if(spaceLeft > 0) {
+  //       printf("shift spaceLeft: %d\n", spaceLeft);
+  //       printf("bits before shift: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
+  //       printf("\n");
+  //       bits = bits << (3 - spaceLeft);
+  //       printf("bits after shift:  " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(bits));
+  //       printf("\n");
+  //
+  //     }
+  //   }
+  //
+  //   out[(int) floor(range[RANGE_START])] += bits;
+  // }
 }
 
 int ternery_store_calculate_array_length(double amountOfTrits) {
