@@ -25,18 +25,33 @@ void testTrits(int amount) {
     ternery_store_set_trit(i, randomTrits[i], trits);
   }
 
-  // printf("Compare the results with our random values...\n");
-  // for(int i = 0; i < amount; i++) {
-  //   int8_t trit = ternery_store_get_trit(i, trits);
-  //   printf("Trit %d: %d\n", i, trit);
-  // }
+  printf("Compare the results with our random values...\n");
+  for(int i = 0; i < amount; i++) {
+    int8_t trit = ternery_store_get_trit(i, trits);
+    printf("Trit %d: %d\n", i, trit);
+  }
+
+  for(int i = 0; i < arrayLen; i++) {
+    printf("bits for array %d: " BYTE_TO_BINARY_PATTERN, i, BYTE_TO_BINARY(trits[i]));
+    printf("\n");
+  }
 }
 
 int main() {
-  int seed = 3;
+  // uint8_t number = 8 + 16;
+  // printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(number));
+  // printf("\n");
+  // int bit = (number >> 3) & 1U;
+  // printf("bit: %d\n", bit);
+  // number ^= (-0 ^ number) & (1UL << 3);
+  // printf("bits: " BYTE_TO_BINARY_PATTERN, BYTE_TO_BINARY(number));
+  // printf("\n");
+  // return 0;
+
+  int seed = 4;
   srand(seed);
 
-  testTrits(2);
-  testTrits(4);
+  //testTrits(2);
+  testTrits(3);
   return 0;
 }
