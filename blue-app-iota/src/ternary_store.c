@@ -80,6 +80,6 @@ void ternary_store_set_trit(uint16_t index, trit_t trit, uint8_t out[])
   out[arrayIndex] += bits;
 }
 
-int ternary_store_calculate_array_length(uint16_t amountOfTrits) {
+uint16_t ternary_store_calculate_array_length(uint16_t amountOfTrits) {
   return ceil(amountOfTrits / 4);
 }

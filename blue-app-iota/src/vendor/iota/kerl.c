@@ -22,7 +22,7 @@ int kerl_absorb_bytes(unsigned char *bytes_in, uint16_t len)
 
 int kerl_absorb_trits(const trit_t trits_in[], uint16_t len)
 {
-    int arrayLen = ternary_store_calculate_array_length(243);
+    uint16_t arrayLen = ternary_store_calculate_array_length(243);
     trit_t trits[arrayLen];
     for (uint8_t i = 0; i < (len/243); i++) {
         // TODO: remove the copy and use of trits altogether and supply the original trits_in array to trits_to_words along with the range we want to read.

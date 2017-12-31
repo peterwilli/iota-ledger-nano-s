@@ -12,13 +12,12 @@ int add_index_to_seed(trit_t trits[], uint32_t index)
         while(carry && offset < 243) {
             trit_t tritOffset = ternary_store_get_trit(offset, trits);
             tritOffset += 1;
-            ternary_store_set_trit(offset, tritOffset, trits);
             if (tritOffset > 1) {
                 tritOffset = -1;
-                ternary_store_set_trit(offset, tritOffset, trits);
             } else {
                 carry = false;
             }
+            ternary_store_set_trit(offset, tritOffset, trits);
             if (carry) {
               offset++;
             }
@@ -27,7 +26,7 @@ int add_index_to_seed(trit_t trits[], uint32_t index)
     return 0;
 }
 
-int generate_private_key(const trit_t seed_trits[], const uint32_t index, trit_t private_key[])
+int generate_private_key(trit_t seed_trits[], const uint32_t index, trit_t private_key[])
 {
     // Add index
     add_index_to_seed(seed_trits, index);

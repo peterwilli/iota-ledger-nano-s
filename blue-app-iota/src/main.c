@@ -488,14 +488,15 @@ static bool derive() {
 		// kerl_absorb_bytes(bytes_in, 48);
 
 		// Squeeze out the seed
-    int arrayLen = ternary_store_calculate_array_length(243);
+    uint16_t arrayLen = ternary_store_calculate_array_length(243);
     trit_t seed_trits[arrayLen];
     memset(seed_trits, 0, sizeof seed_trits);
-		kerl_squeeze_trits(seed_trits, 243);
+    memset(address, 0, sizeof address);
+    kerl_squeeze_trits(seed_trits, 243);
 
     {
       arrayLen = ternary_store_calculate_array_length(243 * 27 * 2);
-      uint8_t private_key_trits[arrayLen];
+      trit_t private_key_trits[arrayLen];
       memset(private_key_trits, 0, sizeof private_key_trits);
       generate_private_key(seed_trits, 1, private_key_trits);
   		// trit_t public_address_trits[243];
@@ -504,7 +505,8 @@ static bool derive() {
       // tryte_t pubkey_addr[81];
   		// trits_to_trytes(public_address_trits, pubkey_addr, 243);
   		// trytes_to_chars(pubkey_addr, address, 81);
-      address[82] = '\0';
+      address[0] = seed_trits[0];
+      address[1] = seed_trits[1];
   	}
     return true;
 }
