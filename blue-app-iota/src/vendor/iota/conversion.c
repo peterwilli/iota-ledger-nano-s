@@ -161,9 +161,9 @@ int words_to_trits(const int32_t words_in[], trit_t trits_out[])
             base[j] = q;
             rem = r;
         }
-        trits_out[i] = rem - 1;
+        ternary_store_set_trit(i, rem - 1, trits_out);
         if (flip_trits) {
-            trits_out[i] = -trits_out[i];
+          ternary_store_set_trit(i, -ternary_store_get_trit(i, trits_out), trits_out);
         }
     }
     return 0;

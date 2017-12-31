@@ -46,7 +46,7 @@ int kerl_squeeze_trits(trit_t trits_out[], uint16_t len)
     words_to_trits(words, trits_out);
 
     // Last trit zero
-    trits_out[242] = 0;
+    ternary_store_set_trit(242, 0, trits_out);
 
     // TODO: Check if the following is needed. Seems to do nothing.
 
