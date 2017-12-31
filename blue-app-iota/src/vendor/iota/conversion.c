@@ -1,5 +1,6 @@
 #include "conversion.h"
 #include "bigint.h"
+#include "ternary_store.h"
 
 #include <stdio.h>
 
@@ -104,7 +105,8 @@ int trits_to_words(const trit_t trits_in[], int32_t words_out[])
             if (i == 242) {
                 bigint_add_int(base, 1, tmp, 13);
             } else {
-                bigint_add_int(base, trits_in[i]+1, tmp, 13);
+                //bigint_add_int(base, trits_in[i]+1, tmp, 13);
+                bigint_add_int(base, ternary_store_get_trit(i, trits_in) + 1, tmp, 13);
             }
             memcpy(base, tmp, 52);
             // todo sz>size stuff

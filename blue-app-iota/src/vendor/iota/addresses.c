@@ -1,5 +1,6 @@
 #include "addresses.h"
 #include "kerl.h"
+#include "ternary_store.h"
 
 // TODO: make sure we can add more index than uint32
 int add_index_to_seed(trit_t trits[], uint32_t index)
@@ -39,9 +40,17 @@ int generate_private_key(const trit_t seed_trits[], const uint32_t index, trit_t
     kerl_absorb_trits(seed_trits, 243);
 
     int8_t level = 2;
+    int arrayLen = ternary_store_calculate_array_length(243);
+    trit_t tmp_trits[arrayLen];
     for (uint8_t i = 0; i < level; i++) {
         for (uint8_t j = 0; j < 27; j++) {
-            kerl_squeeze_trits(&private_key[i*243*27+j*243], 243);
+            memset(tmp_trits, 0, sizeof tmp_trits);
+            // kerl_squeeze_trits(&private_key[i*243*27+j*243], 243);
+            uint16_t privateKeyStart = i*243*27+j*243;
+            for(uint8_t i2 = 0; i2 < 243; i2++) {
+              ternary_store_set_trit(i2, ternary_store_get_trit(privateKeyStart + i2, private_key), tmp_trits);
+            }
+            kerl_squeeze_trits(tmp_trits, 243);
         }
     }
     return 0;

@@ -25,6 +25,7 @@
 #include "vendor/iota/conversion.h"
 #include "vendor/iota/addresses.h"
 #include "vendor/iota/transaction.h"
+#include "ternary_store.h"
 
 unsigned char G_io_seproxyhal_spi_buffer[IO_SEPROXYHAL_BUFFER_SIZE_B];
 
