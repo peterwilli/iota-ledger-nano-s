@@ -21,10 +21,20 @@ int kerl_absorb_bytes(unsigned char *bytes_in, uint16_t len)
 
 int kerl_absorb_trits(const trit_t trits_in[], uint16_t len)
 {
+    int arrayLen = ternary_store_calculate_array_length(243);
+    trit_t trits[arrayLen];
     for (uint8_t i = 0; i < (len/243); i++) {
+        // Reset to make sure we have a clean slate
+        memset(trits, 0, sizeof trits);
+
         // Last trit to zero
-        trit_t trits[243] = {0};
-        memcpy(trits, &trits_in[i*243], 242);
+        ternary_store_set_trit(243, 0, trits);
+
+        // Original:
+        //  memcpy(trits, &trits_in[i*243], 242);
+        for(uint8_t i2 = 0; i2 < 242; i2++) {
+          ternary_store_set_trit(i2, trits_in[(i * 243) + i2], trits);
+        }
 
         // First, convert to bytes
         int32_t words[12];

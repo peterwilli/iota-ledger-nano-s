@@ -9,14 +9,17 @@ int add_index_to_seed(trit_t trits[], uint32_t index)
         uint8_t offset = 0;
         bool carry = true;
         while(carry && offset < 243) {
-            ternary_store_set_trit(offset, ternary_store_get_trit(offset, trits) + 1, trits);
-            if (trits[offset] > 1) {
-                trits[offset] = -1;
+            trit_t tritOffset = ternary_store_get_trit(offset, trits);
+            tritOffset += 1;
+            ternary_store_set_trit(offset, tritOffset, trits);
+            if (tritOffset > 1) {
+                tritOffset = -1;
+                ternary_store_set_trit(offset, tritOffset, trits);
             } else {
                 carry = false;
             }
-              if (carry) {
-                offset++;
+            if (carry) {
+              offset++;
             }
         }
     }
